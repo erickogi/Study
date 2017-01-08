@@ -1,0 +1,486 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+
+	.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.typ
+	{mso-style-name:typ;}
+span.pln
+	{mso-style-name:pln;}
+span.pun
+	{mso-style-name:pun;}
+span.lit
+	{mso-style-name:lit;}
+span.kwd
+	{mso-style-name:kwd;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><u><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Binary
+search</span></u></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Binary
+search is a fast search algorithm with run-time complexity of &#927;(log n).
+This search algorithm works on the principle of divide and conquer. For this
+algorithm to work properly, the data collection should be in the sorted form.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Binary search
+looks for a particular item by comparing the middle most item of the
+collection. If a match occurs, then the index of item is returned. If the
+middle item is greater than the item, then the item is searched in the
+sub-array to the right of the middle item. Otherwise, the item is searched for
+in the sub-array to the left of the middle item. This process continues on the
+sub-array as well until the size of the subarray reduces to zero.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>How Binary Search Works?</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>For a
+binary search to work, it is mandatory for the target array to be sorted. We
+shall learn the process of binary search with a pictorial example. The
+following is our sorted array and let us assume that we need to search the
+location of value 31 using binary search.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/11_files/image001.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=483 height=72 id="Picture 7" src="11_files/image001.jpg"
+alt="Binary search"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>First, we
+shall determine half of the array by using this formula &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>mid = low + (high - low) / 2</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Here it
+is, 0 + (9 - 0 ) / 2 = 4 (integer value of 4.5). So, 4 is the mid of the array.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/11_files/image002.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=483 height=105 id="Picture 6" src="11_files/image002.jpg"
+alt="Binary search"></span></p>
+ -->
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Now we
+compare the value stored at location 4, with the value being searched, i.e. 31.
+We find that the value at location 4 is 27, which is not a match. As the value
+is greater than 27 and we have a sorted array, so we also know that the target
+value must be in the upper portion of the array.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/11_files/image003.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=482 height=75 id="Picture 5" src="11_files/image003.jpg"
+alt="Binary search"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>We change
+our low to mid + 1 and find the new mid value again.</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>low = mid + 1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>mid = low + (high - low) / 2</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Our new
+mid is 7 now. We compare the value stored at location 7 with our target value
+31.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/11_files/image004.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=483 height=106 id="Picture 4" src="11_files/image004.jpg"
+alt="Binary search"></span></p>
+ -->
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>The value
+stored at location 7 is not a match, rather it is less than what we are looking
+for. So, the value must be in the lower part from this location.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/11_files/image005.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=482 height=74 id="Picture 3" src="11_files/image005.jpg"
+alt="Binary search"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Hence, we
+calculate the mid again. This time it is 5.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/11_files/image006.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=483 height=104 id="Picture 2" src="11_files/image006.jpg"
+alt="Binary search"></span></p>
+ -->
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>We
+compare the value stored at location 5 with our target value. We find that it
+is a match.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/11_files/image007.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=483 height=75 id="Picture 1" src="11_files/image007.jpg"
+alt="Binary search"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>We
+conclude that the target value 31 is stored at location 5.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Binary
+search halves the searchable items and thus reduces the count of comparisons to
+be made to very less numbers.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Pseudocode</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>The
+pseudocode of binary search algorithms should look like this &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#7F0055'>Procedure</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> binary_search</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   A </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>&#8592;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> sorted array</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   n </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>&#8592;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> size of array</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   x </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>&#8592;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> value ot be searched</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#7F0055'>Set</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> lowerBound </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>1</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#7F0055'>Set</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> upperBound </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> n </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>while</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> x </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>not</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> found</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> upperBound </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>&lt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> lowerBound </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         EXIT</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>:</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> x does </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>not</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> exists</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>set</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> midPoint </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> lowerBound </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#666600'>+</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> upperBound </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#666600'>-</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> lowerBound </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#666600'>)</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>/</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>2</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> A</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>[</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>midPoint</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>]</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>&lt;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> x</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>set</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> lowerBound </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> midPoint </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#666600'>+</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>1</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> A</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>[</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>midPoint</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>]</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>&gt;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> x</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>set</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> upperBound </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> midPoint </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#666600'>-</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>1</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> A</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>[</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>midPoint</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>]</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> x </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         EXIT</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>:</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> x found at location midPoint</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>while</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>To know
+about binary search implementation using array in C programming language,
+please&nbsp;<a
+href="https://www.tutorialspoint.com/data_structures_algorithms/binary_search_program_in_c.htm"><span
+style='color:#313131'>click here</span></a>.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

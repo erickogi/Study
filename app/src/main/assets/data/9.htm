@@ -1,0 +1,1036 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.kwd
+	{mso-style-name:kwd;}
+span.pln
+	{mso-style-name:pln;}
+span.pun
+	{mso-style-name:pun;}
+span.lit
+	{mso-style-name:lit;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+		.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify'><span style='font-size:20.5pt;font-family:
+"Verdana",sans-serif;color:#121214;letter-spacing:-.75pt'>Queue</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Queue is
+an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue
+is open at both its ends. One end is always used to insert data (enqueue) and
+the other is used to remove data (dequeue). Queue follows First-In-First-Out
+methodology, i.e., the data item stored first will be accessed first.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/9_files/image001.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=599 height=146 id="Picture 4" src="file:///android_asset/data/9_files/image001.jpg"
+alt="Queue Example"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>A
+real-world example of queue can be a single-lane one-way road, where the
+vehicle enters first, exits first. More real-world examples can be seen as
+queues at the ticket windows and bus-stops.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Queue Representation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>As we now
+understand that in queue, we access both ends for different reasons. The
+following diagram given below tries to explain queue representation as data
+structure &#8722;</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/9_files/image002.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=599 height=126 id="Picture 3" src="file:///android_asset/data/9_files/image002.jpg"
+alt="Queue Example"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>As in
+stacks, a queue can also be implemented using Arrays, Linked-lists, Pointers
+and Structures. For the sake of simplicity, we shall implement queues using
+one-dimensional array.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Basic Operations</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Queue
+operations may involve initializing or defining the queue, utilizing it, and
+then completely erasing it from the memory. Here we shall try to understand the
+basic operations associated with queues &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>enqueue()</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; add (store) an item to the
+queue.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>dequeue()</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; remove (access) an item from
+the queue.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Few more
+functions are required to make the above-mentioned queue operation efficient.
+These are &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>peek()</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Gets the element at the front of the queue without
+removing it.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>isfull()</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Checks if the queue is full.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>isempty()</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; Checks if the queue is empty.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>In queue,
+we always dequeue (or access) data, pointed by&nbsp;<b>front</b>&nbsp;pointer
+and while enqueing (or storing) data in the queue we take help of&nbsp;<b>rear</b>&nbsp;pointer.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Let's
+first learn about supportive functions of a queue &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>peek()</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>This
+function helps to see the data at the&nbsp;<b>front</b>&nbsp;of the queue. The
+algorithm of peek() function is as follows &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Algorithm</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>begin procedure peek</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>   return queue[front]</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>end procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Implementation
+of peek() function in C programming language &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Example</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>int</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> peek</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>()</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> queue</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>[</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>front</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>];</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>isfull()</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>As we are
+using single dimension array to implement queue, we just check for the rear
+pointer to reach at MAXSIZE to determine that the queue is full. In case we
+maintain the queue in a circular linked-list, the algorithm will differ.
+Algorithm of isfull() function &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Algorithm</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>begin</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure isfull</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> rear equals to MAXSIZE</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>true</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>else</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>false</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   endif</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Implementation
+of isfull() function in C programming language &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Example</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>bool</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> isfull</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>()</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>rear </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>==</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> MAXSIZE </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>-</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#006666'>1</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>true</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>else</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>false</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>isempty()</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Algorithm
+of isempty() function &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Algorithm</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>begin</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure isempty</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> front </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>is</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> less than MIN  OR front </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#000088'>is</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#313131'> greater than rear</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>true</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>else</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>false</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   endif</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>If the
+value of&nbsp;<b>front</b>&nbsp;is less than MIN or 0, it tells that the queue
+is not yet initialized, hence empty.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Here's
+the C programming code &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Example</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>bool</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> isempty</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>()</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>front </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>&lt;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#006666'>0</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>||</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> front </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>&gt;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> rear</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>)</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>true</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>else</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>false</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Enqueue Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Queues
+maintain two data pointers,&nbsp;<b>front</b>&nbsp;and&nbsp;<b>rear</b>.
+Therefore, its operations are comparatively difficult to implement than that of
+stacks.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>The
+following steps should be taken to enqueue (insert) data into a queue &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 1</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Check if the queue is full.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 2</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; If the queue is full, produce overflow error and
+exit.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 3</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; If the queue is not full, increment&nbsp;<b>rear</b>&nbsp;pointer
+to point the next empty space.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 4</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Add data element to the queue location, where the
+rear is pointing.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 5</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; return success.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/9_files/image003.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=550 height=310 id="Picture 2" src="file:///android_asset/data/9_files/image003.jpg"
+alt="Insert Operation"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Sometimes,
+we also check to see if a queue is initialized or not, to handle any unforeseen
+situations.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Algorithm
+for enqueue operation</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>procedure enqueue</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>data</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>)</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>      </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> queue </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>is</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> full</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> overflow</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   endif</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   rear </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>&#8592;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> rear </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>+</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>1</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   queue</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>[</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>rear</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>]</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>&#8592;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> data</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>true</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Implementation
+of enqueue() in C programming language &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Example</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>int</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> enqueue</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>int</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> data</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>)</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>      </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>isfull</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>())</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#006666'>0</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   rear </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> rear </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>+</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>1</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   queue</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>[</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>rear</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>]</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> data</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#006666'>1</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Dequeue Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Accessing
+data from the queue is a process of two tasks &#8722; access the data
+where&nbsp;<b>front</b>&nbsp;is pointing and remove the data after access. The
+following steps are taken to perform&nbsp;<b>dequeue</b>&nbsp;operation &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 1</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Check if the queue is empty.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 2</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; If the queue is empty, produce underflow error and
+exit.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 3</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; If the queue is not empty, access the data
+where&nbsp;<b>front</b>&nbsp;is pointing.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 3</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Increment&nbsp;<b>front</b>&nbsp;pointer to point to
+the next available data element.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 5</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Return success.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/9_files/image004.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=550 height=346 id="Picture 1" src="file:///android_asset/data/9_files/image004.jpg"
+alt="Remove Operation"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Algorithm
+for dequeue operation</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>procedure dequeue</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> queue </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>is</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> empty</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> underflow</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>if</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   data </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> queue</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>[</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>front</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>]</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   front </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>&#8592;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> front </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>+</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>1</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>true</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Implementation
+of dequeue() in C programming language &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Example</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>int</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> dequeue</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>()</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>isempty</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>())</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#006666'>0</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>int</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> data </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> queue</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>[</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>front</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>];</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   front </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> front </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>+</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>1</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> data</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

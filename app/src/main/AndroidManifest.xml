@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kimanikogi.study">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Software"
+            android:label="@string/title_activity_software"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_software"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Oop"
+            android:label="@string/title_activity_oop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".about"
+            android:label="@string/title_activity_oop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".send"
+            android:label="@string/title_activity_oop"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".webdevper"
+            android:label="@string/title_activity_webdevper"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".webdevlec"
+            android:label="@string/title_activity_webdevlec"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".preservation"
+            android:label="@string/title_activity_preservation"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Radio"
+            android:label="@string/title_activity_radio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Extras"
+            android:label="@string/title_activity_extras"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+        <activity android:name=".Others" />
+
+        <service android:name=".MyFirebaseMEssagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".Mis"
+            android:label="@string/title_activity_mis"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".File" />
+        <activity
+            android:name=".ViewAss"
+            android:label="@string/title_activity_view_ass"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".research"
+            android:label="@string/title_activity_research"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".data"
+            android:label="@string/title_activity_data"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".timetable"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".quiz"></activity>
+    </application>
+
+</manifest>

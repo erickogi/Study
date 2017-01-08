@@ -1,0 +1,105 @@
+<html>
+	<meta charset="UTF-8">
+	<style>
+	
+	  @font-face {
+                    font-family: "ebrima";
+                    src: url('file:///android_asset/fonts/ebrima.TTF');
+                }
+		body{
+			font-family: ebrima, Tahoma, "Arial Black";
+		    font-size: 16px;		    
+		    word-wrap: normal;		
+		}
+		p{
+			line-height:22px;
+			padding-bottom:10px;			
+		}
+		h3, h4{
+			font-family: ebrima, Tahoma, "Arial Black";
+			color:#2c3e4c;
+			padding-bottom:3px;
+			border-bottom: 1px solid #444343;
+			font-weight:650;
+		}
+		td{
+			padding:10px;
+			border: 1px solid #2c3e4c;
+		}
+		
+		.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }	
+	
+</style>
+   <body>
+
+
+   	<h1>LECTURE 3 :SOFTWARE DESIGN </h1> 
+
+<p>•	Software design is a process to conceptualize the software requirements into software implementation. </p>
+<p>•	Software design takes the user requirements as challenges and tries to find optimum solution.</p>
+<p> While the software is being conceptualized, a plan is drawn to find the best possible design for implementing the intended solution. </p>
+<h4>There are multiple variants of software design. </h4>
+
+<h3>Structured Design</h3>
+<p>Structured design is a conceptualization of problem into several well-organized elements of solution.<br/> It is basically concerned with the solution design.</p> 
+<h4>Benefits of structured design</h4>
+<p>•	it gives better understanding of how the problem is being solved. </p>
+<p>•	Structured design also makes it simpler for designer to concentrate on the problem more accurately. </p>
+
+<p>Structured design is mostly based on ‘divide and conquer’ strategy where a problem is broken into several small problems and each small problem is individually solved until the whole problem is solved.</p>
+<p>The small pieces of problem are solved by means of solution modules. </p>
+<p>Structured design emphasis that these modules be well organized in order to achieve precise solution. </p>
+<p>These modules are arranged in hierarchy. They communicate with each other. 
+A good structured design always follows some rules for communication among multiple modules, namely -</p>
+<h4>Cohesion - grouping of all functionally related elements.</h4>
+<h4>Coupling - communication between different modules.</h4>
+<p><i>A good structured design has high cohesion and low coupling arrangements.</i></P>
+
+<h3>Function Oriented Design</h3>
+<p>•	The system is comprised of many smaller sub-systems known as functions. </p>
+<p>•	These functions are capable of performing significant task in the system. </p>
+<p>•	The system is considered as top view of all functions.</p>
+<p>Function oriented design inherits some properties of structured design where divide and conquer methodology is used.<br/>This design mechanism divides the whole system into smaller functions, which provides means of abstraction by concealing the information and their operation.</p>
+<p>These functional modules can share information among themselves by means of information passing and using information available globally.</p>
+<p>Another characteristic of functions is that when a program calls a function, the function changes the state of the program, which sometimes is not acceptable by other modules. </p>
+<p>Function oriented design works well where the system state does not matter and program/functions work on input rather than on a state.</p>
+
+<h3>Design Process</h3>
+<p>•	The whole system is seen as how data flows in the system by means of data flow diagram.</p>
+<p>•	DFD depicts how functions changes data and state of entire system.</p>
+<p>•	The entire system is logically broken down into smaller units known as functions on the basis of their operation in the system.</p>
+<p>•	Each function is then described at large.</p>
+<h3>Object Oriented Design</h3>
+<p>Object oriented design works around the entities and their characteristics instead of functions involved in the software system. This design strategies focuses on entities and its characteristics. </p>
+<p>The whole concept of software solution revolves around the engaged entities.</p>
+<h4>Concepts of Object Oriented Design:</h4>
+<p>•	Objects - All entities involved in the solution design are known as objects. For example, person, banks, company and customers are treated as objects.</p>
+<p> Every entity has some attributes associated to it and has some methods to perform on the attributes.</p>
+<p>•	Classes - A class is a generalized description of an object.</p>
+<p> An object is an instance of a class. Class defines all the attributes, which an object can have and methods, which defines the functionality of the object.</p>
+<p>In the solution design, attributes are stored as variables and functionalities are defined by means of methods or procedures.</p>
+<p>•	Encapsulation - In OOD, the attributes (data variables) and methods (operation on the data) are bundled together is called encapsulation.</p>
+<p> Encapsulation not only bundles important information of an object together, but also restricts access of the data and methods from the outside world.</p>
+<p> <i>This is called information hiding.</i></p>
+<p>•	Inheritance - OOD allows similar classes to stack up in hierarchical manner where the lower or sub-classes can import, implement and re-use allowed variables and methods from their immediate super classes.</p>
+<p> This property of OOD is known as inheritance. This makes it easier to define specific class and to create generalized classes from specific ones.</p>
+<p>•	Polymorphism - OOD languages provide a mechanism where methods performing similar tasks but vary in arguments, can be assigned same name.</p>
+<p> This is called polymorphism, which allows a single interface performing tasks for different types. Depending upon how the function is invoked, respective portion of the code gets executed.</p> 
+<p><i>next design process</i></p>
+   	<br/>
+   	<br/>
+<br/>
+</body>
+</html>

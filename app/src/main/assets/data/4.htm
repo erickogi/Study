@@ -1,0 +1,1689 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+    .erb-image-wrapper{
+      max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+          max-width:100% !important;
+            height:auto;
+            display:block;
+         }
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.com
+	{mso-style-name:com;}
+span.pln
+	{mso-style-name:pln;}
+span.str
+	{mso-style-name:str;}
+span.pun
+	{mso-style-name:pun;}
+span.kwd
+	{mso-style-name:kwd;}
+span.lit
+	{mso-style-name:lit;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Arrays</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Array is
+a container which can hold a fix number of items and these items should be of
+the same type. Most of the data structures make use of arrays to implement
+their algorithms. Following are the important terms to understand the concept
+of Array.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>Element</span></b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Each item stored in an array is called an element.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>Index</span></b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Each location of an element in an array has a
+numerical index, which is used to identify the element.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:#121214;letter-spacing:-.75pt'>Array
+Representation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Arrays
+can be declared in various ways in different languages. For illustration, let's
+take C array declaration.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/4_files/image001.jpg" alt="prototype" />
+</div>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/4_files/image002.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:10.0pt;font-family:"Times New Roman",serif'><img
+width=400 height=112 id="Picture 2" src="file:///android_asset/data/4_files/image001.jpg"
+alt="Array Declaration"><img width=420 height=104 id="Picture 1"
+src="file:///android_asset/data/4_files/image002.jpg" alt="Array Representation"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>As per
+the above illustration, following are the important points to be considered.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>Index starts with 0.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>Array length is 8 which means it can store 8 elements.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>Each element can be accessed via its index. For example, we can
+fetch an element at index 6 as 9.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:#121214;letter-spacing:-.75pt'>Basic
+Operations</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+are the basic operations supported by an array.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>Traverse</span></b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; print all the array elements one by one.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>Insertion</span></b><span style='font-size:10.0pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; Adds an element at the given
+index.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>Deletion</span></b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Deletes an element at the given index.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>Search</span></b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Searches an element using the given index or by the
+value.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>Update</span></b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Updates an element at the given index.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>In C,
+when an array is initialized with size, then it assigns defaults values to its
+elements in following order.</span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=604
+ style='width:453.0pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td valign=top style='border:solid #DDDDDD 1.0pt;background:#EEEEEE;
+  padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>Data Type</span></b></p>
+  </td>
+  <td valign=top style='border:solid #DDDDDD 1.0pt;border-left:none;background:
+  #EEEEEE;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><b><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>Default Value</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid #DDDDDD 1.0pt;border-top:none;padding:
+  6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>bool</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>false</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid #DDDDDD 1.0pt;border-top:none;padding:
+  6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>char</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid #DDDDDD 1.0pt;border-top:none;padding:
+  6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>int</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid #DDDDDD 1.0pt;border-top:none;padding:
+  6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>float</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>0.0</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid #DDDDDD 1.0pt;border-top:none;padding:
+  6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>double</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>0.0f</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid #DDDDDD 1.0pt;border-top:none;padding:
+  6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>void</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'></td>
+ </tr>
+ <tr>
+  <td valign=top style='border:solid #DDDDDD 1.0pt;border-top:none;padding:
+  6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>wchar_t</span></p>
+  </td>
+  <td valign=top style='border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+  <p class=MsoNormal align=center style='margin-bottom:15.0pt;text-align:center;
+  line-height:normal'><span style='font-size:10.0pt;font-family:"Verdana",sans-serif;
+  color:#313131'>0</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:#121214;letter-spacing:-.75pt'>Insertion
+Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Insert
+operation is to insert one or more data elements into an array. Based on the
+requirement, a new element can be added at the beginning, end, or any given
+index of array.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Here, we
+see a practical implementation of insertion operation, where we add data at the
+end of the array &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Algorithm</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Let&nbsp;<b>Array</b>&nbsp;be
+a linear unordered array of&nbsp;<b>MAX</b>&nbsp;elements.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Example</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Result</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Let&nbsp;<b>LA</b>&nbsp;be
+a Linear Array (unordered) with&nbsp;<b>N</b>&nbsp;elements and&nbsp;<b>K</b>&nbsp;is
+a positive integer such that&nbsp;<b>K&lt;=N</b>. Following is the algorithm
+where ITEM is inserted into the K<sup>th</sup>&nbsp;position of LA &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>1. Start</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>2. Set J = N</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>3. Set N = N+1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>4. Repeat steps 5 and 6 while J &gt;= K</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>5. Set LA[J+1] = LA[J]</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>6. Set J = J-1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>7. Set LA[K] = ITEM</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>8. Stop</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Example</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+is the implementation of the above algorithm &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#880000'>#include</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>main</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>()</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[]</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>7</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>8</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>};</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> item </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>10</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> k </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> n </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>0</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> j </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> n</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;The original
+array elements are :\n&quot;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>for</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>0</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>&lt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>n</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>++)</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;LA[%d] = %d
+\n&quot;</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>   
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+n </span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> n </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>+</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>while</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> j </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>&gt;=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> k</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>)</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+LA</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>j</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>+</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>j</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>];</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+j </span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> j </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+LA</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>k</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> item</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         printf</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;The array
+elements after insertion :\n&quot;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>for</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>0</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>&lt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>n</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>++)</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;LA[%d] = %d
+\n&quot;</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>When we
+compile and execute the above program, it produces the following result &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Output</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>The original array elements are :</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[0] = 1 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[1] = 3 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[2] = 5 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[3] = 7 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[4] = 8 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>The array elements after insertion :</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[0] = 1 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[1] = 3 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[2] = 5 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[3] = 10 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[4] = 7 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[5] = 8 </span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>For other
+variations of array insertion operation&nbsp;<a
+href="https://www.tutorialspoint.com/data_structures_algorithms/array_insertion_algorithm.htm"
+target="_blank"><span style='color:#313131'>click here</span></a></span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:#121214;letter-spacing:-.75pt'>Deletion
+Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Deletion
+refers to removing an existing element from the array and re-organizing all
+elements of an array.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Algorithm</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Consider&nbsp;<b>LA</b>&nbsp;is
+a linear array with&nbsp;<b>N</b>&nbsp;elements and&nbsp;<b>K</b>&nbsp;is a
+positive integer such that&nbsp;<b>K&lt;=N</b>. Following is the algorithm to
+delete an element available at the K<sup>th</sup>position of LA.</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>1. Start</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>2. Set J = K</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>3. Repeat steps 4 and 5 while J &lt; N</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>4. Set LA[J-1] = LA[J]</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>5. Set J = J+1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>6. Set N = N-1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>7. Stop</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Example</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+is the implementation of the above algorithm &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#880000'>#include</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>main</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>()</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[]</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>7</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>8</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>};</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> k </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> n </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> j</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;The original
+array elements are :\n&quot;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>for</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>0</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>&lt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>n</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>++)</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;LA[%d] = %d
+\n&quot;</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>   
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+j </span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> k</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>while</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> j </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>&lt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> n</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>)</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+LA</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>j</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>j</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>];</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+j </span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> j </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>+</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+n </span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> n </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;The array
+elements after deletion :\n&quot;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>for</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>0</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>&lt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>n</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>++)</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;LA[%d] = %d
+\n&quot;</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>When we
+compile and execute the above program, it produces the following result &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Output</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>The original array elements are :</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[0] = 1 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[1] = 3 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[2] = 5 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[3] = 7 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[4] = 8 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>The array elements after deletion :</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[0] = 1 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[1] = 3 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[2] = 7 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[3] = 8 </span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:#121214;letter-spacing:-.75pt'>Search
+Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>You can
+perform a search for an array element based on its value or its index.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Algorithm</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Consider&nbsp;<b>LA</b>&nbsp;is
+a linear array with&nbsp;<b>N</b>&nbsp;elements and&nbsp;<b>K</b>&nbsp;is a
+positive integer such that&nbsp;<b>K&lt;=N</b>. Following is the algorithm to
+find an element with a value of ITEM using sequential search.</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>1. Start</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>2. Set J = 0</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>3. Repeat steps 4 and 5 while J &lt; N</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>4. IF LA[J] is equal ITEM THEN GOTO STEP 6</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>5. Set J = J +1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>6. PRINT J, ITEM</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>7. Stop</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Example</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+is the implementation of the above algorithm &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#880000'>#include</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>main</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>()</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[]</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>7</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>8</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>};</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> item </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> n </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>0</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> j </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>0</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;The original
+array elements are :\n&quot;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>for</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>0</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>&lt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>n</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>++)</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;LA[%d] = %d
+\n&quot;</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>   
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>while</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> j </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>&lt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> n</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>){</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>if</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>j</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>==</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> item </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>)</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>        
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>break</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>                 </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+j </span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> j </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>+</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;Found element
+%d at position %d\n&quot;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>,</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> item</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>,</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> j</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>+</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#006666'>1</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>When we
+compile and execute the above program, it produces the following result &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Output</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>The original array elements are :</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[0] = 1 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[1] = 3 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[2] = 5 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[3] = 7 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[4] = 8 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>Found element 5 at position 3</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:#121214;letter-spacing:-.75pt'>Update
+Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Update
+operation refers to updating an existing element from the array at a given
+index.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Algorithm</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Consider&nbsp;<b>LA</b>&nbsp;is
+a linear array with&nbsp;<b>N</b>&nbsp;elements and&nbsp;<b>K</b>&nbsp;is a
+positive integer such that&nbsp;<b>K&lt;=N</b>. Following is the algorithm to
+update an element available at the K<sup>th</sup>&nbsp;position of LA.</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>1. Start</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>2. Set LA[K-1] = ITEM</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>3. Stop</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Example</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+is the implementation of the above algorithm &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#880000'>#include</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&lt;stdio.h&gt;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>main</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>()</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[]</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>7</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>8</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>};</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> k </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>3</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> n </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>5</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> item </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>10</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>int</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> j</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;The original
+array elements are :\n&quot;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>for</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>0</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>&lt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>n</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>++)</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;LA[%d] = %d
+\n&quot;</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>   
+</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+LA</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>k</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>-</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>1</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> item</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;The array
+elements after updation :\n&quot;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#000088'>for</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#006666'>0</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>&lt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>n</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>++)</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>     
+printf</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#008800'>&quot;LA[%d] = %d
+\n&quot;</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'> LA</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>[</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#313131'>i</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#666600'>]);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#313131'>  
+</span><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;border:none;
+padding:0in'><span style='font-size:10.0pt;font-family:Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:"Verdana",sans-serif;color:black'>When we
+compile and execute the above program, it produces the following result &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:10.0pt;
+font-family:"Verdana",sans-serif;color:black'>Output</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>The original array elements are :</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[0] = 1 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[1] = 3 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[2] = 5 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[3] = 7 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[4] = 8 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>The array elements after updation :</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[0] = 1 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[1] = 3 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[2] = 10 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[3] = 7 </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>LA[4] = 8 </span></p>
+
+</div>
+
+<p class=MsoNormal><span style='font-size:10.0pt;line-height:107%'>&nbsp;</span></p>
+
+</div>
+
+</body>
+
+</html>

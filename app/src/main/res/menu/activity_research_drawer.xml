@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/one"
+
+            android:title="What is Research?" />
+        <item
+            android:id="@+id/two"
+
+            android:title="Components of Research" />
+        <item
+            android:id="@+id/three"
+
+            android:title="Research Design" />
+        <item
+            android:id="@+id/four"
+
+            android:title="Purposes of Research" />
+        <item
+            android:id="@+id/five"
+
+            android:title="Steps in Research" />
+        <item
+            android:id="@+id/six"
+
+            android:title="Population and Sampling" />
+        <item
+            android:id="@+id/seven"
+
+            android:title="Research Proposal" />
+        <item
+            android:id="@+id/eight"
+
+            android:title="Literature Review" />
+        <item
+            android:id="@+id/nine"
+
+            android:title="Components of Lit.Review" />
+        <item
+            android:id="@+id/ten"
+
+            android:title="Writing Literature" />
+        <item
+            android:id="@+id/eleven"
+
+            android:title="Goals and Objectives" />
+        <item
+            android:id="@+id/twelve"
+
+            android:title="Research Hypothesis" />
+    </group>
+
+
+
+</menu>

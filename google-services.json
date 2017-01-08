@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "254978864089",
+    "firebase_url": "https://study-1648d.firebaseio.com",
+    "project_id": "study-1648d",
+    "storage_bucket": "study-1648d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254978864089:android:e709122b26a68657",
+        "android_client_info": {
+          "package_name": "com.example.kimanikogi.study"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254978864089-5o7jsr6h8802f4k75kgdgof3getvm4tb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsHX4NaKO_VNZs-vX8qh3pottup6C_G-Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

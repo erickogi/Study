@@ -1,0 +1,824 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.com
+	{mso-style-name:com;}
+span.pln
+	{mso-style-name:pln;}
+span.kwd
+	{mso-style-name:kwd;}
+span.pun
+	{mso-style-name:pun;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+		.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify'><span style='font-size:20.5pt;font-family:
+"Verdana",sans-serif;color:#121214;letter-spacing:-.75pt'>Doubly Linked List</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Doubly
+Linked List is a variation of Linked list in which navigation is possible in
+both ways, either forward and backward easily as compared to Single Linked
+List. Following are the important terms to understand the concept of doubly linked
+list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Link</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Each link of a linked list can store a data called
+an element.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Next</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Each link of a linked list contains a link to the
+next link called Next.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Prev</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Each link of a linked list contains a link to the
+previous link called Prev.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>LinkedList</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; A Linked List contains the
+connection link to the first link called First and to the last link called
+Last.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Doubly Linked List Representation</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/6_files/image001.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=599 height=126 id="Picture 1" src="file:///android_asset/data/6_files/image001.jpg"
+alt="Doubly Linked List"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>As per
+the above illustration, following are the important points to be considered.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Doubly Linked List contains a link element called first and last.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Each link carries a data field(s) and a link field called next.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Each link is linked with its next link using its next link.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Each link is linked with its previous link using its previous
+link.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>The last link carries a link as null to mark the end of the list.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Basic Operations</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+are the basic operations supported by a list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Insertion</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; Adds an element at the
+beginning of the list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Deletion</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Deletes an element at the beginning of the list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Insert Last</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; Adds an element at the end of
+the list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Delete Last</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; Deletes an element from the end
+of the list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Insert After</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; Adds an element after an item
+of the list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Delete</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Deletes an element from the list using the key.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Display forward</span></b><span style='font-size:10.5pt;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&#8722; Displays the
+complete list in a forward manner.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Display backward</span></b><span style='font-size:10.5pt;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&#8722; Displays the
+complete list in a backward manner.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Insertion Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+code demonstrates the insertion operation at the beginning of a doubly linked
+list.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>Example</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//insert link at the first location</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>void</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> insertFirst</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>int</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> key</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>,</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>int</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> data</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>)</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//create a link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>struct</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> node </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>*</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>link </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>struct</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> node</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>*)</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> malloc</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>sizeof</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>struct</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> node</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>));</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   link</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>key </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> key</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   link</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>data </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> data</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>isEmpty</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>())</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//make it the last link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>last</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> link</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>else</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//update first prev link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      head</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>prev </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> link</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//point it to old first link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   link</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>next</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> head</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//point first to new first link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   head </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> link</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Deletion Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+code demonstrates the deletion operation at the beginning of a doubly linked
+list.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>Example</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//delete first item</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>struct</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> node</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>*</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> deleteFirst</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>()</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//save reference to first link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>struct</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> node </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>*</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>tempLink </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> head</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//if only one link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>head</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>-&gt;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>next</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>==</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> NULL</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>)</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>last</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> NULL</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>else</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      head</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>next</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>prev </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> NULL</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   head </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> head</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>next</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//return the deleted link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> tempLink</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Insertion at the End of an Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+code demonstrates the insertion operation at the last position of a doubly
+linked list.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>Example</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//insert link at the last location</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>void</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> insertLast</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>int</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> key</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>,</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>int</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> data</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>)</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//create a link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>struct</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> node </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>*</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>link </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>struct</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> node</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>*)</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> malloc</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>sizeof</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>struct</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> node</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>));</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   link</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>key </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> key</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   link</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>data </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> data</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>isEmpty</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>())</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//make it the last link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>last</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> link</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>else</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//make link a new last link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>last</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>next</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> link</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>     </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//mark old last node as prev of new link</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      link</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>-&gt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>prev </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>last</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#880000'>//point last to new last node</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>last</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>=</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> link</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>To see
+the implementation in C programming language, please&nbsp;<a
+href="https://www.tutorialspoint.com/data_structures_algorithms/doubly_linked_list_program_in_c.htm"><span
+style='color:#313131'>click here</span></a>.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

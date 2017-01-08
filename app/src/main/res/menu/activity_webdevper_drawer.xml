@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/preview"
+
+            android:title="Preview" />
+        <item
+            android:id="@+id/whatishtml"
+
+            android:title="What Is HTML" />
+        <item
+            android:id="@+id/highstyle"
+
+            android:title="HTML Sytle" />
+        <item
+            android:id="@+id/links"
+
+            android:title="Links" />
+        <item
+            android:id="@+id/images"
+
+            android:title="Images" />
+        <item
+            android:id="@+id/tables"
+
+            android:title="Tables" />
+        <item
+            android:id="@+id/lists"
+
+            android:title="Lists" />
+        <item
+            android:id="@+id/frames"
+
+            android:title="Frames" />
+        <item
+            android:id="@+id/color"
+
+            android:title="Colors" />
+        <item
+            android:id="@+id/layouts"
+
+            android:title="Frames/Tables Layouts" />
+        <item
+            android:id="@+id/multimedia"
+
+            android:title="Multimedia" />
+        <item
+            android:id="@+id/marquee"
+
+            android:title="Marque/Email" />
+        <item
+            android:id="@+id/div"
+
+            android:title="DIVS/INLINE/BLOCK" />
+        <item
+            android:id="@+id/reference"
+
+            android:title="Reference" />
+    </group>
+
+
+
+</menu>

@@ -1,0 +1,527 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+		.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>linked
+list</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>A linked
+list is a sequence of data structures, which are connected together via links.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Linked
+List is a sequence of links which contains items. Each link contains a
+connection to another link. Linked list is the second most-used data structure
+after array. Following are the important terms to understand the concept of
+Linked List.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Link</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Each link of a linked list can store a data called
+an element.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Next</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Each link of a linked list contains a link to the
+next link called Next.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>LinkedList</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; A Linked List contains the
+connection link to the first link called First.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Linked List Representation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Linked
+list can be visualized as a chain of nodes, where every node points to the next
+node.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image001.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=599 height=109 id="Picture 14" src="file:///android_asset/data/5_files/image001.jpg"
+alt="Linked List"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>As per
+the above illustration, following are the important points to be considered.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Linked List contains a link element called first.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Each link carries a data field(s) and a link field called next.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Each link is linked with its next link using its next link.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Last link carries a link as null to mark the end of the list.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Types of Linked List</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+are the various types of linked list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Simple Linked List</span></b><span style='font-size:10.5pt;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&#8722; Item navigation is
+forward only.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Doubly Linked List</span></b><span style='font-size:10.5pt;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&#8722; Items can be
+navigated forward and backward.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Circular Linked List</span></b><span style='font-size:10.5pt;
+font-family:"Verdana",sans-serif;color:black'>&nbsp;&#8722; Last item contains
+link of the first element as next and the first element has a link to the last
+element as previous.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Basic Operations</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Following
+are the basic operations supported by a list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Insertion</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; Adds an element at the
+beginning of the list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Deletion</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Deletes an element at the beginning of the list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Display</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Displays the complete list.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Search</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Searches an element using the given key.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Delete</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Deletes an element using the given key.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Insertion Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Adding a
+new node in linked list is a more than one step activity. We shall learn this
+with diagrams here. First, create a node using the same structure and find the
+location where it has to be inserted.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image002.jpg" alt="prototype" />
+</div>
+
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Imagine
+that we are inserting a node&nbsp;<b>B</b>&nbsp;(NewNode), between&nbsp;<b>A</b>&nbsp;(LeftNode)
+and&nbsp;<b>C</b>&nbsp;(RightNode). Then point B.next to C &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>NewNode.next &#8722;&gt; RightNode;</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>It should
+look like this &#8722;</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image003.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=599 height=174 id="Picture 12" src="file:///android_asset/data/5_files/image003.jpg"
+alt="Linked List Insertion"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Now, the
+next node at the left should point to the new node.</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>LeftNode.next &#8722;&gt; NewNode;</span></p>
+
+</div>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image004.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=599 height=174 id="Picture 11" src="file:///android_asset/data/5_files/image004.jpg"
+alt="Linked List Insertion"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>This will
+put the new node in the middle of the two. The new list should look like this
+&#8722;</span></p>
+</div>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image005.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=599 height=107 id="Picture 10" src="file:///android_asset/data/5_files/image005.jpg"
+alt="Linked List Insertion"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Similar
+steps should be taken if the node is being inserted at the beginning of the
+list. While inserting it at the end, the second last node of the list should
+point to the new node and the new node will point to NULL.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Deletion Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Deletion
+is also a more than one step process. We shall learn with pictorial
+representation. First, locate the target node to be removed, by using searching
+algorithms.</span></p>
+</div>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image006.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=599 height=107 id="Picture 9" src="file:///android_asset/data/5_files/image006.jpg"
+alt="Linked List Deletion"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>The left
+(previous) node of the target node now should point to the next node of the
+target node &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>LeftNode.next &#8722;&gt; TargetNode.next;</span></p>
+
+</div>
+
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image007.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=599 height=107 id="Picture 8" src="file:///android_asset/data/5_files/image007.jpg"
+alt="Linked List Deletion"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>This will
+remove the link that was pointing to the target node. Now, using the following
+code, we will remove what the target node is pointing at.</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>TargetNode.next &#8722;&gt; NULL;</span></p>
+
+</div>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image008.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=599 height=107 id="Picture 7" src="file:///android_asset/data/5_files/image008.jpg"
+alt="Linked List Deletion"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>We need
+to use the deleted node. We can keep that in memory otherwise we can simply
+deallocate memory and wipe off the target node completely.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image009.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=450 height=107 id="Picture 6" src="file:///android_asset/data/5_files/image009.jpg"
+alt="Linked List Deletion"></span></p> -->
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Reverse Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>This
+operation is a thorough one. We need to make the last node to be pointed by the
+head node and reverse the whole linked list.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image010.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=450 height=108 id="Picture 5" src="file:///android_asset/data/5_files/image010.jpg"
+alt="Linked List Reverse Operation"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>First, we
+traverse to the end of the list. It should be pointing to NULL. Now, we shall
+make it point to its previous node &#8722;</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image011.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=450 height=106 id="Picture 4" src="file:///android_asset/data/5_files/image011.jpg"
+alt="Linked List Reverse Operation"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>We have
+to make sure that the last node is not the lost node. So we'll have some temp
+node, which looks like the head node pointing to the last node. Now, we shall
+make all left side nodes point to their previous nodes one by one.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image012.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=400 height=107 id="Picture 3" src="file:///android_asset/data/5_files/image012.jpg"
+alt="Linked List Reverse Operation"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Except
+the node (first node) pointed by the head node, all nodes should point to their
+predecessor, making them their new successor. The first node will point to
+NULL.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image013.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=400 height=110 id="Picture 2" src="file:///android_asset/data/5_files/image013.jpg"
+alt="Linked List Reverse Operation"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>We'll
+make the head node point to the new first node by using the temp node.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/5_files/image014.jpg" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=450 height=94 id="Picture 1" src="file:///android_asset/data/5_files/image014.jpg"
+alt="Linked List Reverse Operation"></span></p> -->
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>The
+linked list is now reversed. To see linked list implementation in C programming
+language, please&nbsp;<a
+href="https://www.tutorialspoint.com/data_structures_algorithms/linked_list_program_in_c.htm"><span
+style='color:#313131'>click here</span></a>.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

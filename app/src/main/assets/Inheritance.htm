@@ -1,0 +1,1675 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Ebrima;
+	panose-1:2 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+
+	.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }	
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.typ
+	{mso-style-name:typ;}
+span.pln
+	{mso-style-name:pln;}
+span.pun
+	{mso-style-name:pun;}
+span.kwd
+	{mso-style-name:kwd;}
+span.str
+	{mso-style-name:str;}
+span.com
+	{mso-style-name:com;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:71.9pt 73.0pt 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:1.0in 97.0pt 1.0in 1.0in;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:8.5in 11.0in;
+	margin:71.4pt 1.0in 1.0in 1.0in;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection4
+	{page:WordSection4;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='line-height:99%'><b><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>) Inheritance</span></b></p>
+
+<p class=MsoNormal style='line-height:12.7pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:1.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Below
+is a theoretical explanation of inheritance with real-life examples. For
+detailed explanation on this topic refer </span><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima'><a
+href="http://beginnersbook.com/2013/03/inheritance-in-java/"><b><span
+style='color:#7DC246'>inheritance with examples</span></b><span
+style='color:#222426'> </span></a></span><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>and </span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima'><a
+href="http://beginnersbook.com/2013/05/java-inheritance-types/"><b><span
+style='color:#7DC246'>types of inheritance</span></b></a></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'> </span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima'><a
+href="http://beginnersbook.com/2013/05/java-inheritance-types/"><b><span
+style='color:#7DC246'>in java</span></b></a></span><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>.</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:51.0pt;text-align:justify;line-height:
+98%'><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>------Inheritance is the mechanism by which an object acquires
+the some/all properties of another object.</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>-------It
+supports the concept of hierarchical classification.</span></p>
+
+<p class=MsoNormal style='line-height:14.45pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:3.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>For
+example: Car is a classification of Four Wheeler. Here Car acquires the
+properties of a four-wheeler. Other classifications could be a jeep, tempo, van
+etc. Four Wheeler defines a class of vehicles that have four wheels, and
+specific range of engine power, load carrying capacity etc. Car (termed as a
+sub-class) acquires these properties from Four Wheeler (termed as a
+super-class), and has some specific properties, which are different from other
+classifications of Four Wheeler, such as luxury, comfort, shape, size, usage
+etc.</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:98%'><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>A car can have further
+classification such as an open car, small car, big car etc, which will acquire
+the properties from both Four Wheeler and Car, but will still have some
+specific properties. This way the level of hierarchy can be extended to any
+level.</span></p>
+
+<p class=MsoNormal style='line-height:19.7pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Java
+Swing and Awt classes represent best examples for inheritance.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Inheritance</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>One
+of the most important relationships among objects in the real world is specialization,
+which can be described as the <i>is-a-kind-of </i>or <i>is-a </i>relationship.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>When
+we say that a dog is a mammal, we mean that the dog is a specialized kind of
+mammal. It has all the characteristics of any mammal (it bears live young,
+nurses with milk, has hair), but it specializes these characteristics to the
+familiar characteristics of <i>canis domesticus</i>. A cat is also a mammal. As
+such, we expect it to share certain characteristics with the dog that are
+generalized in Mammal, but to differ in thosecharacteristics that are
+specialized in cats.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The
+ability of a new class to be created, from an existing class by extending it,
+is called <i>inheritance</i>. </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>In
+this case, the dog class and and the cat class each inherit the mammal class. </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The
+specialization relationship is implemented using inheritance.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The
+specialization and generalization relationships are both reciprocal and
+hierarchical.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Specialization
+is just the other side of the generalization coin: Mammal generalizes whatis
+common between dogs and cats, and dogs and cats specialize mammals to their own
+specific subtypes.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Remember
+that abstraction reduces complexity by hiding irrelevant details.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Generalization</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The
+concept of <i>generalization </i>occurs when several classes that already exist
+exhibit common functionality, structure, and purpose. </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The
+analyst decides to create a new class to hold all the common attributes and
+functionality and make the existing classes extend it. </span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The
+new class is a generalized from the existing ones.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Specialization</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The
+concept of Specialization occurs when you realize that the new class you are
+about to add has all the functionality, structure, and purpose of an existing
+class, but which also requires new behaviour or attributes or both. The new
+class is a specialized form of the existing one.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Abstract operations and classes</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Abstract
+classes, which declared with the abstract keyword, cannot be instantiated.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>It
+canonly be used as a super-class for other classes that extend the abstract
+class. Abstract class is the concept and implementation gets completed when it
+is being realized by a subclass.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>In
+addition to this a class can inherit only from one abstract class (but a class
+may implement many interfaces) and and must override all its methods/properties
+that are declared to be abstract and may override virtual methods/ properties.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>An
+abstract operation is an operation with no implementation. This is equivalent
+to a base class pure-virtual function in C++ or a deferred feature in Eiffel.
+In other words, it has an interface and a defined functionality but no
+implementation method with actual code.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>For
+example, we could make <b>getArea </b>an abstract operation in Polygon, which
+would then become an abstract class. This has two implications:</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>----We
+would have to provide a concrete operation <b>getArea </b>for each of its
+subclasses.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>----
+We would never instantiate an object of class Polygon but a reference (or
+pointer) of type Polygon would still be used tohold the handle of an object of
+any of the subclasses.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Inheritance: reusing the interface</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>This
+is the mechanism by which attributes and the operations of a class become
+available to another class, as if those attributes and operations had been
+defined in the later class.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Class
+inheritance (usually referred to simply as inheritance) is an implementation of
+the generalization concept. Generalization states that the properties of an
+object type apply to its subtypes.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>In
+most Object Oriented languages, the subclass inherits everything that the
+superclass has on offer; it doesn’t get to pick and choose what it inherits.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>In
+single inheritance a class has exactly one direct superclass. Multiple
+inheritance is also possible. With multiple inheritance, each class has more
+than one direct superclasses.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Although
+inheritance may sometimes imply that you are going to add new functions to the
+interface, thats not necessarily true. The second and more important way to
+differentiate your new class is to change the behaviour of an existing
+base-class function.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>This
+is referred to as overriding that function.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>To
+override a function, you simply create a new definition for the function in the
+derived class. You are saying, I am using the same interface function here, but
+I want it to do something different for my new type.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><i><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Association</span></i></b></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Association </span></i><span style='font-size:12.0pt;font-family:
+Ebrima;color:#222426'>is a <i>has-a </i>or <i>uses </i>relationship between two
+classes where <u>there is no particular ownership in place</u>. It is just the
+connectivity between the two classes. All objects have their own lifecycle and
+there is no owner.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Lets
+take an example of Teacher and Student. They can exist without each other</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The
+death of one party has no effect on the other party.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Aggregation</span></b></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Aggregation </span></i><span style='font-size:12.0pt;font-family:
+Ebrima;color:#222426'>is a specialized form of <i>association</i>. The addition
+is <u>there that one of the parties is an owner and a child (the owned object)</u>
+can not belong to another parent object. An example is a school Department and
+teacher. A teacher can only belong to one department.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Composition</span></b></p>
+
+<p class=MsoNormal><i><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Composition </span></i><span style='font-size:12.0pt;font-family:
+Ebrima;color:#222426'>is a <u>specialized form of a<i>ggregation</i></u>. The
+addition is <u>that neither party canexist meaningfully after the death of the
+other;</u> if the parent object is deleted all child<u> </u>objects will also
+be deleted. Lets take again an example of relationship between House<u> </u>and
+rooms. House can contain multiple rooms there is no independent life of room
+and<u> </u>any room cannot belong to two different houses. If we delete the
+house - room will<u> </u>automatically be deleted</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>--
+Some authors refer to aggregation as weak association and composition as strong
+association.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>--Some
+authors refer to aggregation as strong association and composition as strong
+aggregation.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>--Some
+authors refer to both aggregation and composition as strong type of association
+but distinguish them as (with partial ownership) and (with full ownership)
+respectively.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>--Some
+authors refer to composition as the (death) relationship if the lifetime of the
+objects are the same.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Degree of an Association</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Degree
+of an association denotes the number of classes involved in a connection.
+Degree may be unary, binary, or ternary.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>----A
+unary relationship connects objects of the same class.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>----A
+binary relationship connects objects of two classes.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>---
+A ternary relationship connects objects of more than two classes.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Cardinality Ratios of Associations</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Cardinality
+of a binary association denotes the number of instances participating in
+anassociation. There are three types of cardinality ratios, namely:</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>---One--to--One
+: A single object of class A is associated with a single object of class B.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>---One--to--Many
+: A single object of class A is associated with many objects of class B.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>---Many--to--Many
+: An object of class A may be associated with many objects of class B and
+conversely an object of class B may be associated with many objects of class</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Composition: Reusing the implementation</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Composition
+is often referred to as a <i>has-a </i>relationship, as in a car has an engine.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Composition
+comes with a great deal of flexibility. The member objects of your new class
+are usually private, making them inaccessible to the client programmers who are
+using the class. This allows you to change those members without disturbing
+existing client code. You can also change the member objects at runtime, to
+dynamically change the behaviour of your program.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Propagation and Delegation</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>In
+<i>Object-oriented programming</i>, Association defines a relationship between
+classes of objects which allows one object instance to cause another to perform
+an action on its behalf. This relationship is structural, because it specifies
+that objects of one kind are connected to objects of another.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>In
+generic terms the causation is usually called &quot;sending a message&quot;,
+&quot;invoking a method&quot; or &quot;calling a member function&quot; to the
+controlled object. Concrete implementation usually requires the requesting
+object to invoke a method or member function using a reference or pointer to
+the memory location of the controlled object.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Propagation</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Propagation
+is a principle that you can apply to classes that are associated with others
+through both aggregation and composition.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>If
+a system requires a <b>Car </b>object, it simply instantiates the <b>Car </b>class.
+The <b>CarRadio</b>, Engine, and other associated objects are created by the
+Car. Therefore, the Car class acts as an interface to the others, possibly
+without the owner of the Car even knowing they exist.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>In
+such systems, the owner of the <b>Car </b>can invoke methods on that object.
+These methods can in turn invoke methods on any of the objects of which it is
+an aggregate, or from which it is composed. Consider the <b>Car </b>class
+having a <b>pushAccelerator()</b> method.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>When
+the system invokes the <b>pushAccelerator() </b>method of the <b>Car </b>object,
+it is attempting to alter something about the <b>Car </b>(in this case, its
+speed). The internal state of the <b>Car </b>class must change, but so does the
+state of some of the associated objects.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>This
+means that invoking the Car’s <b>pushAccelerator() </b>method involves the
+invocation of one or more methods on the associated objects. In this case, one
+of the objects affected by the <b>pushAccelerate() </b>method is the <b>Engine</b>.
+The <b>Engine </b>has an appropriate method for the Car to invoke, possibly
+called <b>accelerate().</b></span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The
+actions of the <b>pushAccelerator() </b>method involves invoking the <b>accelerate()
+</b>method. This should not be the whole task. The invocation of one method,
+causing one<b> </b>or more methods on associated objects to be invoked in this
+way, is called Propagation.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Delegation</span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Delegation
+is another principle that applies to classes that are related through
+association. Propagation involved invoking a method of the <b>Car </b>class to
+invoke a method of another class. <b><u>Delegation is where the entire
+operation that the user or system invokes on the</u></b></span></p>
+
+<p class=MsoNormal><b><u><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Car class actually takes place within associated objects.</span></u></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>For
+example, the Car class has a <b>turnMusicDown() </b>method. This is an
+operation that the user associates with the Car, because that class is the only
+class to which the user has a reference. But because the analysis has created a
+separate <b>CarRadio </b>class, which is  actually responsible for the volume
+of the music within the <b>Car</b>, the <b>Car </b>delegates that 
+responsibility.</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Both
+the Car and <b>CarRadio </b>classes have a <b>turnMusicDown() </b>method. In
+the <b>CarRadio </b>class, it actually alters the volume attribute. In the <b>Car
+</b>class, it simply invokes the <b>turnMusicDown() </b>method of the <b>CarRadio</b>.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal style='margin-right:7.0pt;text-align:justify;line-height:
+98%'><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>The process by which one class acquires the properties and
+functionalities of another class. Inheritance provides the idea of reusability of
+code and each sub class defines only those features that are unique to it.</span></p>
+
+<p class=MsoNormal style='line-height:19.8pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Inheritance is a
+mechanism of defining a new class based on an existing class.</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:19.0pt;margin-bottom:
+0in;margin-left:30.0pt;margin-bottom:.0001pt;text-align:justify;text-indent:
+-.25in;line-height:98%'><span style='font-size:12.0pt;line-height:98%;
+font-family:Ebrima;color:#222426'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>Inheritance enables reuse of code. Inheritance also provides
+scope for refinement of the existing class. Inheritance helps in<b>specialization</b></span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-align:justify;text-indent:
+-.25in'><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The existing (or
+original) class is called the <b>base class</b> or <b>super class</b> or <b>parent</b></span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-align:justify;line-height:
+99%'><b><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>class. </span></b><span style='font-size:12.0pt;line-height:
+99%;font-family:Ebrima;color:#222426'>The new class which inherits from the
+base class is called the derived class or<b> sub class </b>or<b> child class</b>.</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-align:justify;text-indent:
+-.25in;line-height:99%'><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>Inheritance implements the </span><span style='font-size:12.0pt;
+line-height:99%;font-family:"Times New Roman",serif;color:#222426'>&#8213;</span><b><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Is-A</span></b><span
+style='font-size:12.0pt;line-height:99%;font-family:"Times New Roman",serif;
+color:#222426'>&#8214;</span><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'> or </span><span style='font-size:12.0pt;
+line-height:99%;font-family:"Times New Roman",serif;color:#222426'>&#8213;</span><b><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Kind
+Of/ Has-A</span></b><span style='font-size:12.0pt;line-height:99%;font-family:
+"Times New Roman",serif;color:#222426'>&#8214;</span><span style='font-size:
+12.0pt;line-height:99%;font-family:Ebrima;color:#222426'> relationship.</span></p>
+
+<p class=MsoNormal style='line-height:14.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:.25in;line-height:98%'><b><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Note
+: </span></b><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>The biggest advantage of Inheritance is that, code in base class
+need not be<b> </b>rewritten in the derived class.</span></p>
+
+<p class=MsoNormal style='line-height:.45pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:26.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>The <b>member
+variables</b> and <b>methods</b> of the base class can be used in the <b>derived</b>
+<b>class </b>as well.</span></p>
+
+<p class=MsoNormal style='line-height:19.65pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Inheritance Example</span></b></p>
+
+<p class=MsoNormal style='line-height:98%'><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>Consider below two classes –</span></p>
+
+<p class=MsoNormal style='line-height:19.6pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Class
+Teacher:</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:341.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+96%'><span style='font-size:12.0pt;line-height:96%;font-family:Ebrima;
+color:darkblue'>class </span><span style='font-size:12.0pt;line-height:96%;
+font-family:Ebrima;color:#2B91AF'>Teacher</span><span style='font-size:12.0pt;
+line-height:96%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:96%;font-family:Ebrima;color:black'>{</span><span
+style='font-size:12.0pt;line-height:96%;font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:341.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+96%'><span style='font-size:12.0pt;line-height:96%;font-family:Ebrima;
+color:darkblue'>private </span><span style='font-size:12.0pt;line-height:96%;
+font-family:Ebrima;color:#2B91AF'>String</span><span style='font-size:12.0pt;
+line-height:96%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:96%;font-family:Ebrima;color:black'>name;</span></p>
+
+<p class=MsoNormal style='margin-right:4.5in;line-height:96%'><span
+style='font-size:12.0pt;line-height:96%;font-family:Ebrima;color:darkblue'>private
+double </span><span style='font-size:12.0pt;line-height:96%;font-family:Ebrima;
+color:black'>salary;</span></p>
+
+<p class=MsoNormal style='margin-right:4.5in;line-height:96%'><span
+style='font-size:12.0pt;line-height:96%;font-family:Ebrima;color:darkblue'> private
+</span><span style='font-size:12.0pt;line-height:96%;font-family:Ebrima;
+color:#2B91AF'>String</span><span style='font-size:12.0pt;line-height:96%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:96%;font-family:Ebrima;color:black'>subject;</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:96%;font-family:Ebrima;color:black'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='line-height:1.7pt'><a name=page10></a><span
+style='font-size:12.0pt;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:250.0pt;margin-bottom:
+0in;margin-left:39.0pt;margin-bottom:.0001pt;text-indent:-22.05pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>public </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:#2B91AF'>Teacher</span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>(</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:#2B91AF'>String</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>tname)</span></p>
+
+<p class=MsoNormal style='margin-right:250.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'> {</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-right:250.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>name =
+tname;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:283.0pt;margin-bottom:
+0in;margin-left:39.0pt;margin-bottom:.0001pt;text-indent:-22.05pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:darkblue'>public </span><span style='font-size:12.0pt;line-height:91%;
+font-family:Ebrima;color:#2B91AF'>String</span><span style='font-size:12.0pt;
+line-height:91%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:black'>getName()
+</span></p>
+
+<p class=MsoNormal style='margin-right:283.0pt;line-height:91%'><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:black'>{</span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-right:283.0pt;line-height:91%'><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'>return
+</span><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>name;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.8pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:267.0pt;margin-bottom:
+0in;margin-left:39.0pt;margin-bottom:.0001pt;text-indent:-22.05pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>private double </span><span style='font-size:12.0pt;line-height:
+92%;font-family:Ebrima;color:black'>getSalary() </span></p>
+
+<p class=MsoNormal style='margin-right:267.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>{</span></p>
+
+<p class=MsoNormal style='margin-right:267.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> return
+</span><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>salary;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.8pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:256.0pt;margin-bottom:
+0in;margin-left:44.0pt;margin-bottom:.0001pt;text-indent:-27.45pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>private </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:#2B91AF'>String</span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>getSubject()
+</span></p>
+
+<p class=MsoNormal style='margin-right:256.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>{</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-right:256.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'>return
+</span><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>subject;</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:94%'><span style='font-size:12.0pt;
+line-height:94%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:94%'><span style='font-size:12.0pt;
+line-height:94%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:98%'><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>Class: OfficeStaff</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:305.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+101%'><span style='font-size:12.0pt;line-height:101%;font-family:Ebrima;
+color:darkblue'>class </span><span style='font-size:12.0pt;line-height:101%;
+font-family:Ebrima;color:#2B91AF'>OfficeStaff</span><span style='font-size:
+12.0pt;line-height:101%;font-family:Ebrima;color:black'>{</span><span
+style='font-size:12.0pt;line-height:101%;font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:305.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+101%'><span style='font-size:12.0pt;line-height:101%;font-family:Ebrima;
+color:darkblue'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:305.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+101%'><span style='font-size:12.0pt;line-height:101%;font-family:Ebrima;
+color:darkblue'>private </span><span style='font-size:12.0pt;line-height:101%;
+font-family:Ebrima;color:#2B91AF'>String</span><span style='font-size:12.0pt;
+line-height:101%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:101%;font-family:Ebrima;color:black'>name;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:305.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+101%'><span style='font-size:12.0pt;line-height:101%;font-family:Ebrima;
+color:darkblue'>private double </span><span style='font-size:12.0pt;line-height:
+101%;font-family:Ebrima;color:black'>salary;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:305.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+101%'><span style='font-size:12.0pt;line-height:101%;font-family:Ebrima;
+color:darkblue'>private </span><span style='font-size:12.0pt;line-height:101%;
+font-family:Ebrima;color:#2B91AF'>String</span><span style='font-size:12.0pt;
+line-height:101%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:101%;font-family:Ebrima;color:black'>dept;</span></p>
+
+<p class=MsoNormal style='line-height:1.55pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:228.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>public </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:#2B91AF'>OfficeStaff</span><span style='font-size:
+12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>(</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:#2B91AF'>String</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>sname) </span></p>
+
+<p class=MsoNormal style='margin-right:228.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>{</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-right:228.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>name =
+sname;</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.75pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:283.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'>public
+</span><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:#2B91AF'>String</span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:black'>getName()</span></p>
+
+<p class=MsoNormal style='margin-right:283.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>{</span></p>
+
+<p class=MsoNormal style='margin-right:283.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'>return
+</span><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>name;</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.85pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:261.0pt;line-height:91%'><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'>private
+double </span><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>getSalary() </span></p>
+
+<p class=MsoNormal style='margin-right:261.0pt;line-height:91%'><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:black'>{</span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-right:261.0pt;line-height:91%'><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'>return
+</span><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>salary;</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.85pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:267.0pt;line-height:91%'><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'>private
+</span><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:#2B91AF'>String</span><span style='font-size:12.0pt;line-height:91%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:91%;font-family:Ebrima;color:black'>getDept () </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:267.0pt;margin-bottom:
+0in;margin-left:39.0pt;margin-bottom:.0001pt;text-indent:-22.05pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:267.0pt;line-height:91%'><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:black'>{</span></p>
+
+<p class=MsoNormal style='margin-right:267.0pt;line-height:91%'><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'>return
+</span><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>dept;</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:97%'><span style='font-size:12.0pt;
+line-height:97%;font-family:Ebrima;color:#222426'>Points:</span></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:98%'><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Both
+the classes share few common properties and methods. Thus repetition of code.</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt;line-height:99%'><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>Creating a class which contains the common methods and
+properties.</span></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:0in;
+line-height:98%'><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>The
+classes <span style='background:#EEEEEE'>Teacher</span> and <span
+style='background:#EEEEEE'>OfficeStaff</span> can inherit the all the common
+properties and methods from below Employee class</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:317.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+97%'><span style='font-size:12.0pt;line-height:97%;font-family:Ebrima;
+color:darkblue'>class </span><span style='font-size:12.0pt;line-height:97%;
+font-family:Ebrima;color:#2B91AF'>Employee</span><span style='font-size:12.0pt;
+line-height:97%;font-family:Ebrima;color:black'>{</span><span style='font-size:
+12.0pt;line-height:97%;font-family:Ebrima;color:darkblue'> private </span><span
+style='font-size:12.0pt;line-height:97%;font-family:Ebrima;color:#2B91AF'>String</span><span
+style='font-size:12.0pt;line-height:97%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:97%;font-family:Ebrima;color:black'>name;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:darkblue'>private
+double </span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:black'>salary;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:261.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:darkblue'>public </span><span style='font-size:12.0pt;line-height:91%;
+font-family:Ebrima;color:#2B91AF'>Employee</span><span style='font-size:12.0pt;
+line-height:91%;font-family:Ebrima;color:black'>(</span><span style='font-size:
+12.0pt;line-height:91%;font-family:Ebrima;color:#2B91AF'>String</span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:black'>ename)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:261.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:261.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>{</span><span style='font-size:12.0pt;line-height:91%;font-family:
+Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:261.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>name=ename;</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.8pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:294.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>public </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:#2B91AF'>String</span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>getName()</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:294.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>{</span><span style='font-size:12.0pt;line-height:92%;font-family:
+Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:294.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>return </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:black'>name;</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.8pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:278.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>private double </span><span style='font-size:12.0pt;line-height:
+92%;font-family:Ebrima;color:black'>getSalary()</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:278.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>{</span><span style='font-size:12.0pt;line-height:92%;font-family:
+Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:278.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>return </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:black'>salary;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima'>&nbsp;</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;font-family:Ebrima'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:14.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-indent:0in;line-height:99%'><a
+name=page11></a><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>4)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Add
+individual methods and properties to it Once we have created a super class that
+defines the attributes common to a set of objects, it can be used to create any
+number of more specific subclasses</span></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:4.0pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:98%'><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>5)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Any
+similar classes like Engineer, Principal can be generated as subclasses from
+the Employee class.</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt'><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:Ebrima;color:#222426'>The parent class is
+termed super class and the inherited class is the sub class</span></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:104%'><span style='font-size:12.0pt;line-height:104%;font-family:
+Ebrima;color:#222426'>7)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:104%;font-family:Ebrima;color:#222426'>A
+sub class is the specialized version of a super class </span><span
+style='font-size:12.0pt;line-height:104%;font-family:Ebrima;color:#222426'>–</span><span
+style='font-size:12.0pt;line-height:104%;font-family:Ebrima;color:#222426'> It
+inherits all of the instance variables and methods defined by the super class
+and adds its own, unique elements.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:98%'><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>8)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Although
+a sub class includes all of the members of its super class it can not access
+those members of the super class that have been declared as private.</span></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:0in;text-align:justify;text-indent:0in;
+line-height:98%'><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>9)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>A
+reference variable of a super class can be assigned to a reference to any sub
+class derived from that super class</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#222426'>i.e. <span style='background:
+#EEEEEE'>Employee emp = new Teacher();</span></span></p>
+
+<p class=MsoNormal style='line-height:19.65pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><b><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#222426'>Note: Multi-level inheritance
+</span></b><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>is allowed in Java but<b> not multiple inheritance</b></span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/Inheritance_files/image001.jpg" alt="prototype" />
+</div>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.75pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Types of Inheritance</span></b></p>
+
+<p class=MsoNormal style='line-height:99%'><b><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#222426'>Multilevel Inheritance</span></b></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:3.0pt;line-height:99%'><b><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Multilevel
+inheritance </span></b><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'>refers to a mechanism in OO technology where
+one can inherit<b> </b>from a derived class, thereby making this derived class
+the base class for the new class.</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Multiple Inheritance</span></b></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:"Times New Roman",serif;color:#222426'>&#8213;</span><b><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Multiple
+Inheritance</span></b><span style='font-size:12.0pt;line-height:99%;font-family:
+"Times New Roman",serif;color:#222426'>&#8214;</span><span style='font-size:
+12.0pt;line-height:99%;font-family:Ebrima;color:#222426'> refers to the concept
+of one class inheriting from more than</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>one
+base class. The inheritance we learnt earlier had the concept of one base class
+or</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>parent.
+The problem with </span><span style='font-size:12.0pt;font-family:"Times New Roman",serif;
+color:#222426'>&#8213;</span><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>multiple inheritance</span><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif;color:#222426'>&#8214;</span><span
+style='font-size:12.0pt;font-family:Ebrima;color:#222426'> is that the derived
+class will have to</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>manage
+the dependency on two base classes.</span></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:12.0pt;line-height:99%'><b><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Note
+1</span></b><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>:<b> Multiple Inheritance </b>is very rarely used in software
+projects. Using Multiple<b> </b>inheritance often leads to problems in the
+hierarchy. This results in unwanted complexity when further extending the class.</span></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:40.0pt;line-height:98%'><b><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Note
+2: </span></b><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>Most of the new<b> OO languages </b>like Small Talk, Java, C# do
+not support<b> </b>Multiple inheritance. Multiple Inheritance is supported in
+C++.</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection4>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:18.0pt;font-family:"Trebuchet MS",sans-serif;color:green'>1)
+Single Inheritance</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Single
+inheritance</span></b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>&nbsp;is damn easy to understand. When a class extends another
+one class only then we &nbsp;call it a single inheritance. The below flow
+diagram shows that class B extends only one class which is A. Here A is a&nbsp;<b>parent
+class</b>&nbsp;of B and B would be &nbsp;a&nbsp;<b>child class</b>&nbsp;of A.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/Inheritance_files/image002.png" alt="prototype" />
+</div>
+
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Single&nbsp;Inheritance&nbsp;example
+program in Java</span></b></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:#2B91AF'>Class</span><span style='font-family:Consolas;color:black'> A</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>void</span><span style='font-family:Consolas;color:black'>
+methodA()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;Base class method&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:#2B91AF'>Class</span><span style='font-family:Consolas;color:black'> B </span><span
+style='font-family:Consolas;color:darkblue'>extends</span><span
+style='font-family:Consolas;color:black'> A</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>void</span><span style='font-family:Consolas;color:black'>
+methodB()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;Child class method&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>static</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>void</span><span style='font-family:
+Consolas;color:black'> main(</span><span style='font-family:Consolas;
+color:#2B91AF'>String</span><span style='font-family:Consolas;color:black'>
+args[])</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     B obj = </span><span style='font-family:Consolas;color:darkblue'>new</span><span
+style='font-family:Consolas;color:black'> B();</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     obj.methodA(); </span><span style='font-family:Consolas;
+color:gray'>//calling super class method</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     obj.methodB(); </span><span style='font-family:Consolas;
+color:gray'>//calling local method</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>  }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:18.0pt;font-family:"Trebuchet MS",sans-serif;color:green'>2)
+Multiple Inheritance</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>“<b>Multiple
+Inheritance</b>” refers to the concept of one class extending (Or inherits)
+more than one base class. The inheritance we learnt earlier had the concept of
+one base class or parent. The problem with “multiple inheritance” is that the
+derived class will have to manage the dependency on two base classes.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/Inheritance_files/image003.png" alt="prototype" />
+
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Note
+1: Multiple Inheritance is very rarely used in software projects. Using
+Multiple inheritance often leads to problems in the hierarchy. This results in
+unwanted complexity when further extending the class.</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Note
+2: Most of the new OO languages like&nbsp;<b>Small Talk, Java, C# do not
+support Multiple inheritance</b>. Multiple Inheritance is supported in C++.</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:18.0pt;font-family:"Trebuchet MS",sans-serif;color:green'>3)
+Multilevel Inheritance</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Multilevel
+inheritance</span></b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>&nbsp;refers to a mechanism in OO technology where one can
+inherit from a derived class, thereby making this derived class the base class
+for the new class. As you can see in below flow diagram C is subclass or child
+class of B and B is a child class of A. For more details and example refer
+–&nbsp;<a
+href="http://beginnersbook.com/2013/12/multilevel-inheritance-in-java-with-example/"
+target="_blank" title=Multilevel><b><span style='color:#7DC246'>Multilevel
+inheritance in Java</span></b></a>.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/Inheritance_files/image004.png" alt="prototype" />
+
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Multilevel&nbsp;Inheritance&nbsp;example
+program in Java</span></b></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:#2B91AF'>Class</span><span style='font-family:Consolas;color:black'> X</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>void</span><span style='font-family:Consolas;color:black'>
+methodX()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;Class X method&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:#2B91AF'>Class</span><span style='font-family:Consolas;color:black'> Y </span><span
+style='font-family:Consolas;color:darkblue'>extends</span><span
+style='font-family:Consolas;color:black'> X</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>public</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>void</span><span style='font-family:
+Consolas;color:black'> methodY()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:#2B91AF'>System</span><span style='font-family:Consolas;color:black'>.</span><span
+style='font-family:Consolas;color:darkblue'>out</span><span style='font-family:
+Consolas;color:black'>.println(</span><span style='font-family:Consolas;
+color:maroon'>&quot;class Y method&quot;</span><span style='font-family:Consolas;
+color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:#2B91AF'>Class</span><span style='font-family:Consolas;color:black'> Z </span><span
+style='font-family:Consolas;color:darkblue'>extends</span><span
+style='font-family:Consolas;color:black'> Y</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>void</span><span style='font-family:Consolas;color:black'>
+methodZ()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;class Z method&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>static</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>void</span><span style='font-family:
+Consolas;color:black'> main(</span><span style='font-family:Consolas;
+color:#2B91AF'>String</span><span style='font-family:Consolas;color:black'>
+args[])</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>   {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     Z obj = </span><span style='font-family:Consolas;color:darkblue'>new</span><span
+style='font-family:Consolas;color:black'> Z();</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     obj.methodX(); </span><span style='font-family:Consolas;
+color:gray'>//calling grand parent class method</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     obj.methodY(); </span><span style='font-family:Consolas;
+color:gray'>//calling parent class method</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     obj.methodZ(); </span><span style='font-family:Consolas;
+color:gray'>//calling local method</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>  }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:18.0pt;font-family:"Trebuchet MS",sans-serif;color:green'>4)
+Hierarchical Inheritance</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>In
+such kind of inheritance one class is inherited by many<b>&nbsp;sub classes</b>.
+In below example class B,C and D&nbsp;<b>inherits</b>&nbsp;the same class A. A
+is&nbsp;<b>parent class (or base class)</b>&nbsp;of B,C &amp; D. Read More at
+–&nbsp;<a
+href="http://beginnersbook.com/2013/10/hierarchical-inheritance-java-program/"
+target="_blank" title=Hierarchical><b><span style='color:#7DC246'>Hierarchical
+Inheritance in java with example program</span></b></a>.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/Inheritance_files/image005.png" alt="prototype" />
+
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:18.0pt;font-family:"Trebuchet MS",sans-serif;color:green'>5)
+Hybrid Inheritance</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>In
+simple terms you can say that Hybrid inheritance is a combination of<b>&nbsp;Single</b>&nbsp;and&nbsp;<b>Multiple&nbsp;inheritance.</b>&nbsp;A
+typical flow diagram would look like below. A hybrid inheritance can be
+achieved in the java in a same way as multiple&nbsp;inheritance&nbsp;can be!!
+Using interfaces. yes you heard it right. By using&nbsp;<b>interfaces</b>&nbsp;you
+can have multiple as well as&nbsp;<b>hybrid inheritance</b>&nbsp;in Java.</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Read
+the full article here –&nbsp;<a
+href="http://beginnersbook.com/2013/10/hybrid-inheritance-java-program/"
+target="_blank" title=Hybrid><b><span style='color:#7DC246'>hybrid inheritance
+in java with example program</span></b></a>.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/Inheritance_files/image006.png" alt="prototype" />
+
+
+<p class=MsoNormal style='line-height:19.35pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

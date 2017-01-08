@@ -1,0 +1,260 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.pln
+	{mso-style-name:pln;}
+span.pun
+	{mso-style-name:pun;}
+span.kwd
+	{mso-style-name:kwd;}
+span.str
+	{mso-style-name:str;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+		.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Linear
+search</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Linear
+search is a very simple search algorithm. In this type of search, a sequential
+search is made over all items one by one. Every item is checked and if a match
+is found then that particular item is returned, otherwise the search continues
+till the end of the data collection.</span></p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/data/10_files/image001.gif" alt="prototype" />
+</div>
+<!-- <p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'><img
+width=438 height=180 id="Picture 1" src="file:///android_asset/data/10_files/image001.gif"
+alt="Linear Search Animation"></span></p> -->
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Algorithm</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>Linear Search ( Array A, Value x)</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>Step 1: Set i to 1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>Step 2: if i &gt; n then go to step 7</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>Step 3: if A[i] = x then go to step 6</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>Step 4: Set i to i + 1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>Step 5: Go to Step 2</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>Step 6: Print Element x Found at index i
+and go to step 8</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>Step 7: Print element not found</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>Step 8: Exit</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Pseudocode</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>procedure linear_search </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#666600'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>list</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>,</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> value</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>for</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> each item </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>in</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> the list</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> match item </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>==</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> value</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>         </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#000088'>return</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> the item</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#008800'>'s location</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#008800'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#008800'>      end if</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#008800'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#008800'>   end for</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#008800'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#008800'>end procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>To know
+about linear search implementation in C programming language, please&nbsp;<a
+href="https://www.tutorialspoint.com/data_structures_algorithms/linear_search_program_in_c.htm"><span
+style='color:#313131'>click-here</span></a>.</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

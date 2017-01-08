@@ -1,0 +1,298 @@
+<html>
+	<meta charset="UTF-8">
+	<style>
+	
+	  @font-face {
+                    font-family: "ebrima";
+                    src: url('file:///android_asset/fonts/ebrima.TTF');
+                }
+		body{
+			font-family: ebrima, Tahoma, "Arial Black";
+		    font-size: 16px;		    
+		    word-wrap: normal;		
+		}
+		p{
+			line-height:22px;
+			padding-bottom:10px;			
+		}
+		h3, h4{
+			font-family: ebrima, Tahoma, "Arial Black";
+			color:#2c3e4c;
+			padding-bottom:3px;
+			border-bottom: 1px solid #444343;
+			font-weight:650;
+		}
+		td{
+			padding:10px;
+			border: 1px solid #2c3e4c;
+		}
+		
+		.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }	
+	
+</style>
+   <body>
+<h1>LECTURE 4 - THE SOFTWARE PROCESS MODEL</h4>
+
+<h2>General Software Process Models:</h2>
+<p>•	Waterfall model: Separate and distinct phases of specification and development</p>
+<p>•	Prototype model</p>
+<p>•	Rapid application development model (RAD)</p>
+<p>•	Evolutionary development: Specification, development and validation are interleaved.</p>
+<p>•	Incremental model</p>
+<p>•	Iterative model</p>
+<p>•	Spiral model</p>
+<p>•	Component-based software engineering : The system is assembled from existing components.</p>
+
+<h3>.	The Waterfall Model</h3>
+<p>It is a sequential design process, used in software development processes, in which progress is seen as flowing steadily downwards through the phases of Conception, Initiation, Analysis, Design, Construction, Testing, Production/Implementation and Maintenance.</p>
+
+
+<p>Advantages of the Waterfall Model</p>
+<p>1	Dependence on individuals is minimzed.</p>
+<p>2	Quality control is easier</p>
+<p>3	 Cost control is manageable</p>
+<p>4	This model is simple and easy to understand and use.</p>
+<p>5	It is easy to manage due to the rigidity of the model – each phase has specific deliverables and a review process.</p>
+<p>6	In this model phases are processed and completed one at a time. Phases do not overlap.</p>
+<p>7	Waterfall model works well for smaller projects where requirements are very well understood.</p>
+
+<h4>Problems of Waterfall Model</h4>
+<p>1	The main drawback of the waterfall model is the difficulty of accommodating change after the process is underway. One phase has to be complete before moving onto the next phase.</p>
+<p>2	Each stage in the process reveals new understanding of the previous stages, that requires the earlier stages to be revised.</p>
+<p>3	Inflexible partitioning of the project into distinct stages makes it difficult to respond to changing customer requirements.</p> 
+<p>4	No working software is produced until late during the life cycle.</p>
+<p>5	Not suitable for the projects where requirements are at a moderate to high risk of changing.</p>
+<p>6	High amounts of risk and uncertainty.</p>
+<p>7	Not a good model for complex and object-oriented projects.</p>
+<p>8	Poor model for long and ongoing projects.</p>
+<p><i>When to use this model.</i></p>
+<p>•	This model is only appropriate when the requirements are well-understood and changes will be fairly limited during the design process. </p>
+<p>•	Product definition is stable - Few business systems have stable requirements.</p>
+<p>•	This waterfall model is mostly used for large systems engineering projects where a system is developed at several sites. </p>
+<p>•	Technology is understood.</p> 
+<p>•	There are no ambiguous requirements</p> 
+<p>•	Ample resources with required expertise are available freely </p>
+<p>•	The project is short.</p>
+
+<h3>2.	 Iterative Refinement (Evolutionary Development)</h3>
+<p>It does not attempt to start with a full specification of requirements.<br/> Instead, development begins by specifying and implementing just part of the software, which can then be reviewed in order to identify further requirements. <br/>This process is then repeated, producing a new version of the software for each cycle of the model.</p>
+ <div class="erb-image-wrapper">
+<img src="file:///android_asset/iterative.png" alt="iterative model" />
+</div>
+
+<h4>Advantages of Iterative model:</h4>
+<p>•	We can only create a high-level design of the application before we actually begin to build the product and define the design solution for the entire product.<br/> Later on we can design and built a skeleton version of that, and then evolved the design based on what had been built.</p>
+<p>•	In iterative model we are building and improving the product step by step. Hence we can track the defects at early stages.<br/> This avoids the downward flow of the defects.</p>
+<p>•	In iterative model we can get the reliable user feedback. When presenting sketches and blueprints of the product to users for their feedback, we are effectively asking them to imagine how the product will work.</p>
+<p>•	In iterative model less time is spent on documenting and more time is given for designing.
+</p>
+<h4>Disadvantages of Iterative model:  </h4>
+<p>•	Each phase of an iteration is rigid with no overlaps</p>
+<p>•	Costly system architecture or design issues may arise because not all requirements are gathered up front for the entire lifecycle</p>
+
+<h4>When to use iterative model:</h4>
+<p>•	Requirements of the complete system are clearly defined and understood. </p>
+<p>•	When the project is big.</p>
+<p>•	Major requirements must be defined; however, some details can evolve with time.</p>
+
+
+<h3>V-model</h3>
+<p>V- model means Verification and Validation model. <br/>Just like the waterfall model, the V-Shaped life cycle is a sequential path of execution of processes.<br/> Each phase must be completed before the next phase begins.  Testing of the product is planned in parallel with a corresponding phase of development.</p>
+ 
+<p><i>The various phases of the V-model are as follows:</i></p>
+<p>.The high-level design (HLD) phase focuses on system architecture and design. It provide overview of solution, platform, system, product and service/process.</p> 
+<p>.The low-level design (LLD) phase is where the actual software components are designed.<br/> It defines the actual logic for each and every component of the system. <br/>Class diagram with all the methods and relation between classes comes under LLD. Component tests are created in this phase as well.<br/>
+The implementation phase is, again, where all coding takes place. Once coding is complete, the path of execution continues up the right side of the V where the test plans developed earlier are now put to use.</p>
+<p>Coding: Module design is converted into code by developers.</p>
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/v.png" alt="v model" />
+</div>
+<h4>Advantages of V-model:</h4>
+<p>•	Simple and easy to use.</p>
+<p>•	Testing activities like planning, test designing happens well before coding.<br/> This saves a lot of time. Hence higher chance of success over the waterfall model.</p>
+<p>•	Proactive defect tracking – that is defects are found at early stage.</p>
+<p>•	Avoids the downward flow of the defects.</p>
+<p>•	Works well for small projects where requirements are easily understood.</p>
+
+<h4>Disadvantages of V-model:</h4>
+<p>•	Very rigid and least flexible.</p>
+<p>•	Software is developed during the implementation phase, so no early prototypes of the software are produced.</p>
+<p>•	If any changes happen in midway, then the test documents along with requirement documents has to be updated.</p>
+
+<h4>When to use the V-model:</h4>
+<p>•	The V-shaped model should be used for small to medium sized projects where requirements are clearly defined and fixed.</p>
+<p>•	The V-Shaped model should be chosen when ample technical resources are available with needed technical expertise.</p>
+<p>High confidence of customer is required for choosing the V-Shaped model approach. Since, no prototypes are produced, there is a very high risk involved in meeting customer expectations.</p>
+
+<h3>Incremental model</h3>
+<p>The whole requirement is divided into various builds. <br/>Multiple development cycles take place here, making the life cycle a “multi-waterfall” cycle. <br/> Cycles are divided up into smaller, more easily managed modules.  Each module passes through the requirements, design, implementation and testing phases. A working version of software is produced during the first module, so you have working software early on during the software life cycle.</p> 
+<p>Each subsequent release of the module adds function to the previous release. The process continues till the complete system is achieved.</p>
+  <div class="erb-image-wrapper">
+<img src="file:///android_asset/incremental.png" alt="incremental" />
+</div>
+<h4>dvantages of Incremental model:</h4>
+<P>•	Generates working software quickly and early during the software life cycle.</P>
+<P>•	This model is more flexible – less costly to change scope and requirements.</p>
+<P>•	It is easier to test and debug during a smaller iteration.</P>
+<p>•	In this model customer can respond to each built.</p>
+<p>•	Lowers initial delivery cost.</p>
+<p>•	Easier to manage risk because risky pieces are identified and handled during it’d iteration.</p>
+
+<h4>Disadvantages of Incremental model:</h4>
+<p>•	Needs good planning and design.</p>
+<p>•	Needs a clear and complete definition of the whole system before it can be broken down and built incrementally.</p>
+<p>•	Total cost is higher than waterfall.</p>
+<h4>When to use the Incremental model:</h4>
+<p>•	This model can be used when the requirements of the complete system are clearly defined and understood. </p>
+<p>•	Major requirements must be defined; however, some details can evolve with time.</p> 
+<p>•	There is a need to get a product to the market early.</p>
+<p>•	A new technology is being used</p>
+<p>•	Resources with needed skill set are not available</p>
+<p>•	There are some high risk features and goals.</p>
+
+<h3>RAD model</h3>
+<p>RAD model is Rapid Application Development model.<br/> It is a type of incremental model. In RAD model the components or functions are developed in parallel as if they were mini projects.<br/> The developments are time boxed, delivered and then assembled into a working prototype.  This can quickly give the customer something to see and use and to provide feedback regarding the delivery and their requirements.</p>
+<h4>Advantages of the RAD model:</h4>
+<p>•	Reduced development time.</p>
+<p>•	Increases reusability of components</p>
+<p>•	Quick initial reviews occur</p>
+<p>•	Encourages customer feedback</p>
+<p>•	Integration from very beginning solves a lot of integration issues.</p>
+
+<h4>Disadvantages of RAD model:</h4>
+<p>•	Depends on strong team and individual performances for identifying business requirements.</p>
+<p>•	Only system that can be modularized can be built using RAD</p>
+<p>•	Requires highly skilled developers/designers.</p>
+<p>•	High dependency on modeling skills</p>
+<p>•	Inapplicable to cheaper projects as cost of modeling and automated code generation is very high.</p>
+ 
+<h4>When to use RAD model:</h4>
+<p>•	RAD should be used when there is a need to create a system that can be modularized in 2-3 months of time.</p>
+<p>•	It should be used if there’s high availability of designers for modeling and the budget is high enough to afford their cost along with the cost of automated code generating tools.</p>
+<p>•	RAD SDLC model should be chosen only if resources with high business knowledge are available and there is a need to produce the system in a short span of time (2-3 months).</p>
+
+<h3>Agile model</h3>
+<p>Agile development model is also a type of Incremental model.<br/> Software is developed in incremental, rapid cycles. This results in small incremental releases with each release building on previous functionality. Each release is thoroughly tested to ensure software quality is maintained. It is used for time critical applications. <br/> Extreme Programming (XP) is currently one of the most well known agile development life cycle model.</p>
+ <div class="erb-image-wrapper">
+<img src="file:///android_asset/agile.png" alt="agile" />
+</div>
+
+<h4>Advantages of Agile model: </p>
+<p>•	Customer satisfaction by rapid, continuous delivery of useful software.</p>
+<p>•	People and interactions are emphasized rather than process and tools. Customers, developers and testers constantly interact with each other.</p>
+<p>•	Working software is delivered frequently (weeks rather than months).</p>
+<p>•	Face-to-face conversation is the best form of communication.</p>
+<p>•	Close, daily cooperation between business people and developers.</p>
+<p>•	Continuous attention to technical excellence and good design.</p>
+<p>•	Regular adaptation to changing circumstances.</p>
+<p>•	Even late changes in requirements are welcomed</p>
+<h4>Disadvantages of Agile model:</h4>
+<p>•	In case of some software deliverables, especially the large ones, it is difficult to assess the effort required at the beginning of the software development life cycle.</p>
+<p>•	There is lack of emphasis on necessary designing and documentation.</p>
+<p>•	The project can easily get taken off track if the customer representative is not clear what final outcome that they want.</p>
+<p>•	Only senior programmers are capable of taking the kind of decisions required during the development process. Hence it has no place for newbie programmers, unless combined with experienced resources.</p>
+<h4>When to use Agile model:</h4>
+<p>•	When new changes are needed to be implemented.<br/> The freedom agile gives to change is very important. New changes can be implemented at very little cost because of the frequency of new increments that are produced.</p>
+<p>•	To implement a new feature the developers need to lose only the work of a few days, or even only hours, to roll back and implement it.</p>
+<p>•	Unlike the waterfall model in agile model very limited planning is required to get started with the project.<br/> Agile assumes that the end users’ needs are ever changing in a dynamic business and IT world.<br/> Changes can be discussed and features can be newly effected or removed based on feedback. This effectively gives the customer the finished system they want or need.
+•	Both system developers and stakeholders alike, find they also get more freedom of time and options than if the software was developed in a more rigid sequential way.<br/> Having options gives them the ability to leave important decisions until more or better data or even entire hosting programs are available; meaning the project can continue to move forward without fear of reaching a sudden standstill.</p>
+
+<h3>Prototype model</h3>
+<p>The idea here is that instead of freezing the requirements before a design or coding can proceed, a throwaway prototype is built to understand the requirements.<br/> This prototype is developed based on the currently known requirements.</p>
+<p> By using this prototype, the client can get an “actual feel” of the system, since the interactions with prototype can enable the client to better understand the requirements of the desired system.  Prototyping is an attractive idea for complicated and large systems for which there is no manual process or existing system to help determining the requirements. </p>
+<p>The prototype are usually not complete systems and many of the details are not built in the prototype. The goal is to provide a system with overall functionality.</p>
+  <div class="erb-image-wrapper">
+<img src="file:///android_asset/prototype.png" alt="prototype" />
+</div>
+<h4>Advantages of Prototype model:</h4>
+<p>•	Users are actively involved in the development</p>
+<p>•	Since in this methodology a working model of the system is provided, the users get a better understanding of the system being developed.</p>
+<p>•	Errors can be detected much earlier.</p>
+<p>•	Quicker user feedback is available leading to better solutions.</p>
+<p>•	Missing functionality can be identified easily</p>
+<p>•	Confusing or difficult functions can be identified</p>
+<p>Requirements validation, Quick implementation of, incomplete, but
+functional, application.</p>
+<h4>Disadvantages of Prototype model:</h4>
+<p>•	Leads to implementing and then repairing way of building systems.</p>
+<p>•	Practically, this methodology may increase the complexity of the system as scope of the system may expand beyond original plans.</p>
+<p>•	Incomplete application may cause application not to be used as the
+full system was designed</p>
+<p>.Incomplete or inadequate problem analysis.</p> 
+<h4>When to use Prototype model: </h4>  
+<p>•	Prototype model should be used when the desired system needs to have a lot of interaction with the end users.</p>
+<p>•	Typically, online systems, web interfaces have a very high amount of interaction with end users, are best suited for Prototype model.<br/> It might take a while for a system to be built that allows ease of use and needs minimal training for the end user.</p>
+<p>•	Prototyping ensures that the end users constantly work with the system and provide a feedback which is incorporated in the prototype to result in a useable system. <br/>They are excellent for designing good human computer interface systems.</p>
+
+<h3>Spiral model</h3>
+<p>The spiral model is similar to the incremental model, with more emphasis placed on risk analysis. The spiral model has four phases: Planning, Risk Analysis, Engineering and Evaluation.</p>
+<p> A software project repeatedly passes through these phases in iterations (called Spirals in this model). </p>
+<p>The baseline spiral, starting in the planning phase, requirements are gathered and risk is assessed. Each subsequent spirals builds on the baseline spiral. </p>
+<p>Planning Phase: Requirements are gathered during the planning phase. Requirements like ‘BRS’ that is ‘Bussiness Requirement Specifications’ and ‘SRS’ that is ‘System Requirement specifications’.</p>
+<p>Risk Analysis: In the risk analysis phase, a process is undertaken to identify risk and alternate solutions.  A prototype is produced at the end of the risk analysis phase. If any risk is found during the risk analysis then alternate solutions are suggested and implemented.</p>
+<p>Engineering Phase: In this phase software is developed, along with testing at the end of the phase. Hence in this phase the development and testing is done.</p>
+<p>Evaluation phase: This phase allows the customer to evaluate the output of the project to date before the project continues to the next spiral.</p>
+<p><i>Diagram of Spiral model:</i></p>
+ <div class="erb-image-wrapper">
+<img src="file:///android_asset/spiral.png" alt="spiral" />
+</div>
+<h4>Advantages of Spiral model:</h4>
+<p>•	High amount of risk analysis hence, avoidance of Risk is enhanced.</p>
+<p>•	Good for large and mission-critical projects.</p>
+<p>•	Strong approval and documentation control.</p>
+<p>•	Additional Functionality can be added at a later date.</p>
+<p>•	Software is produced early in the software life cycle.</p>
+<h4>Disadvantages of Spiral model:</h4>
+<p>•	Can be a costly model to use.</p>
+<p>•	Risk analysis requires highly specific expertise.</p>
+<p>•	Project’s success is highly dependent on the risk analysis phase.</p>
+<p>•	Doesn’t work well for smaller projects.</p>
+ <h4>When to use Spiral model:</h4>
+<p>•	When costs and risk evaluation is important</p>
+<p>•	For medium to high-risk projects</p>
+<p>•	Long-term project commitment unwise because of potential changes to economic priorities</p>
+<p>•	Users are unsure of their needs</p>
+<p>•	Requirements are complex</p>
+<p>•	New product line</p>
+<p>•	Significant changes are expected (research and exploration)</p>
+
+<h3>3.	Exploratory development</h3> 
+<p>The objective is to work with customers and to evolve a final system from an initial outline specification. <br/>Should start with well-understood requirements and add new features as proposed by the customer.</p>
+<h3>4.	Throw-away prototyping</h3>
+<p>Objective is to understand the system requirements. Should start with poorly understood requirements to clarify what is really needed.</p>
+
+ <div class="erb-image-wrapper">
+<img src="file:///android_asset/throwaway.png" alt="throw away" />
+</div>
+<h4>	Problems and Applicability of Evolutionary development</h4>
+<p>1	Lack of process visibility</p>
+<p>2	Systems are often poorly structured</p>
+<p>3	Special skills (e.g. in languages for rapid prototyping) may be required</p>
+<p>4	Applicability</p>
+<p>5	For small or medium-size interactive systems</p>
+<p>6	For parts of large systems (e.g. the user interface)</p>
+<p>7	For short-lifetime systems</p>
+<h4>These tasks are common to all the models</h4>
+<p>1.	Communication: helps to understand the objective.</p>
+<p>2.	Planning: required as many people (software teams) work on the same project but different function at same time.</p>
+<p>3.	Modeling: involves business modeling, data modeling, and process modeling.</p>
+<p>4.	Construction: this involves the reuse software components and automatic code.</p>
+<p>5.	Deployment: integration</p>
+<br/>
+
+<br/>
+<br/>
+</body>
+</html>

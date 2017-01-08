@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+
+            android:title="Overview And Definations" />
+        <item
+            android:id="@+id/nav_gallery"
+
+            android:title="@string/role" />
+
+
+
+    </group>
+
+    <item android:title="Methods Of Preservation">
+        <menu>
+            <item
+                android:id="@+id/preventive"
+
+                android:title=" Preventive Preservation" />
+
+
+            <item
+                android:id="@+id/other"
+
+                android:title="Other Conservation Techniques" />
+        </menu>
+    </item>
+    <item  android:title="Methods">
+        <menu>
+            <item
+                android:id="@+id/reformatting"
+
+                android:title="Reformatting"/>
+
+
+            <item
+                android:id="@+id/microfilming"
+
+                android:title="Microfilming"
+            />
+
+
+        </menu>
+
+    </item>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/digitization"
+
+            android:title="Digitization" />
+        <item
+            android:id="@+id/plan"
+
+            android:title="@string/planning" />
+
+
+    </group>
+
+
+    <item
+        android:id="@+id/materials"
+
+        android:title="Storage and Handling Materials " />
+
+</menu>

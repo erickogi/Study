@@ -1,0 +1,148 @@
+<html>
+	<meta charset="UTF-8">
+	<style>
+	
+	  @font-face {
+                    font-family: "ebrima";
+                    src: url('file:///android_asset/fonts/ebrima.TTF');
+                }
+		body{
+			font-family: ebrima, Tahoma, "Arial Black";
+		    font-size: 16px;		    
+		    word-wrap: normal;		
+		}
+		p{
+			line-height:22px;
+			padding-bottom:10px;			
+		}
+		h3, h4{
+			font-family: ebrima, Tahoma, "Arial Black";
+			color:#2c3e4c;
+			padding-bottom:3px;
+			border-bottom: 1px solid #444343;
+			font-weight:650;
+		}
+		td{
+			padding:10px;
+			border: 1px solid #2c3e4c;
+		}
+		
+		.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }	
+	
+</style>
+   <body>
+<h1>LECTURE 6: SOFTWARE ESTIMATION</h1>
+<p>Estimation is the process of finding an estimate, or approximation, which is a value that can be used for some purpose even if input data may be incomplete, uncertain, or unstable.</p>
+<p>Estimation determines how much money, effort, resources, and time it will take to build a specific system or product. Estimation is based on −</p>
+<P>•	Past Data/Past Experience</p>
+<p>•	Available Documents/Knowledge</p>
+<p>•	Assumptions</p>
+<p>•	Identified Risks</p>
+<p>The four basic steps in Software Project Estimation are −</p>
+<br/>
+<p>•	Estimate the size of the development product.</p>
+<p>•	Estimate the effort in person-months or person-hours.</p>
+<p>•	Estimate the schedule in calendar months.</p>
+<p>•	Estimate the project cost in agreed currency.</p>
+
+<h3>Observations on Estimation</h3>
+<p>•	Estimation need not be a one-time task in a project. It can take place during −</p>
+<br/>
+<p>o	Acquiring a Project.</p>
+<p>o	Planning the Project.</p>
+<p>o	Execution of the Project as the need arises.<p>
+	<br/>
+<p>•	Project scope must be understood before the estimation process begins. It will be helpful to have historical Project Data.</p>
+<p>•	Project metrics can provide a historical perspective and valuable input for generation of quantitative estimates.</p>
+<p>•	Planning requires technical managers and the software team to make an initial commitment as it leads to responsibility and accountability.</p>
+<p>•	Past experience can aid greatly.</p>
+<p>•	Use at least two estimation techniques to arrive at the estimates and reconcile the resulting values. Refer Decomposition Techniques in the next section to learn about reconciling estimates.</p>
+<p>•	Plans should be iterative and allow adjustments as time passes and more details are known.</p>
+
+<h3>General Project Estimation Approach</h3>
+<p>The Project Estimation Approach that is widely used is Decomposition Technique. </p>
+<p>Decomposition techniques take a divide and conquer approach. Size, Effort and Cost estimation are performed in a stepwise manner by breaking down a Project into major Functions or related Software Engineering Activities.</p>
+<h5>Step 1 − Understand the scope of the software to be built.</h5>
+<h5>Step 2 − Generate an estimate of the software size.</h5>
+<p>•	Start with the statement of scope.</p>
+<p>•	Decompose the software into functions that can each be estimated individually.</p>
+<p>•	Calculate the size of each function.</p>
+<p>•	Derive effort and cost estimates by applying the size values to your baseline productivity metrics.</p>
+<p>•	Combine function estimates to produce an overall estimate for the entire project.</p>
+<h5>Step 3 − Generate an estimate of the effort and cost. You can arrive at the effort and cost estimates by breaking down a project into related software engineering activities.</h5>
+<p>•	Identify the sequence of activities that need to be performed for the project to be completed.</p>
+<p>•	Divide activities into tasks that can be measured.</p>
+<p>•	Estimate the effort (in person hours/days) required to complete each task.</p>
+<p>•	Combine effort estimates of tasks of activity to produce an estimate for the activity.</p>
+<p>•	Obtain cost units (i.e., cost/unit effort) for each activity from the database.</p>
+<p>•	Compute the total effort and cost for each activity.</p>
+<p>•	Combine effort and cost estimates for each activity to produce an overall effort and cost estimate for the entire project.</p>
+<h5>Step 4 − Reconcile estimates: Compare the resulting values from Step 3 to those obtained from Step 2. If both sets of estimates agree, then your numbers are highly reliable. Otherwise, if widely divergent estimates occur conduct further investigation concerning whether −</h5>
+<p>•	The scope of the project is not adequately understood or has been misinterpreted.</p>
+<p>•	The function and/or activity breakdown is not accurate.</p>
+<p>•	Historical data used for the estimation techniques is inappropriate for the application, or obsolete, or has been misapplied.</p>
+<h5>Step 5 − Determine the cause of divergence and then reconcile the estimates.</h5>
+
+<h3>Estimation Accuracy</h3>
+<p>Accuracy is an indication of how close something is to reality. </p>
+<p>Whenever you generate an estimate, everyone wants to know how close the numbers are to reality. <br/>
+You will want every estimate to be as accurate as possible, given the data you have at the time you generate it. And of course you don’t want to present an estimate in a way that inspires a false sense of confidence in the numbers.</p>
+<p><i>Important factors that affect the accuracy of estimates are −</i></p>
+<p>•	The accuracy of all the estimate’s input data.</p>
+<p>•	The accuracy of any estimate calculation.</p>
+<p>•	How closely the historical data or industry data used to calibrate the model matches the project you are estimating.</p>
+<p>•	The predictability of your organization’s software development process.</p>
+<p>•	The stability of both the product requirements and the environment that supports the software engineering effort.</p>
+<p>•	Whether or not the actual project was carefully planned, monitored and controlled, and no major surprises occurred that caused unexpected delays.</p>
+<p>Following are some guidelines for achieving reliable estimates −</p>
+<br/>
+<p>•	Base estimates on similar projects that have already been completed.</p>
+<p>•	Use relatively simple decomposition techniques to generate project cost and effort estimates.</p>
+<p>•	Use one or more empirical estimation models for software cost and effort estimation.</p>
+<p><i><u>Refer to the section on Estimation Guidelines in this chapter.</u></i></p>
+<p>To ensure accuracy, you are always advised to estimate using at least two techniques and compare the results.</p>
+
+<h3>Estimation Issues</h3>
+<p>Often, project managers resort to estimating schedules skipping to estimate size.<br/> This may be because of the timelines set by the top management or the marketing team. <br/>However, whatever the reason, if this is done, then at a later stage it would be difficult to estimate the schedules to accommodate the scope changes.</p>
+<p>While estimating, certain assumptions may be made. It is important to note all these assumptions in the estimation sheet, as some still do not document assumptions in estimation sheets.</p>
+<p>Even good estimates have inherent assumptions, risks, and uncertainty, and yet they are often treated as though they are accurate.</p>
+<p>The best way of expressing estimates is as a range of possible outcomes by saying, for example, that the project will take 5 to 7 months instead of stating it will be complete on a particular date or it will be complete in a fixed no. of months. Beware of committing to a range that is too narrow as that is equivalent to committing to a definite date.</p>
+<p>•	You could also include uncertainty as an accompanying probability value. <br/>For example, there is a 90% probability that the project will complete on or before a definite date.</p>
+<p>•	Organizations do not collect accurate project data. Since the accuracy of the estimates depend on the historical data, it would be an issue.</p>
+<p>•	For any project, there is a shortest possible schedule that will allow you to include the required functionality and produce quality output. If there is a schedule constraint by management and/or client, you could negotiate on the scope and functionality to be delivered.</p>
+<p>•	Agree with the client on handling scope creeps to avoid schedule overruns.</p>
+<p>•	Failure in accommodating contingency in the final estimate causes issues. For e.g., meetings, organizational events.</p>
+<p>•	Resource utilization should be considered as less than 80%.<br/> This is because the resources would be productive only for 80% of their time. If you assign resources at more than 80% utilization, there is bound to be slippages.</p>
+
+<h3>Estimation Guidelines</h3>
+<p>One should keep the following guidelines in mind while estimating a project −</p>
+<br/>
+<p>•	During estimation, ask other people's experiences. Also, put your own experiences at task.</p>
+<p>•	Assume resources will be productive for only 80 percent of their time. Hence, during estimation take the resource utilization as less than 80%.</p>
+<p>•	Resources working on multiple projects take longer to complete tasks because of the time lost switching between them.</p>
+<p>•	Include management time in any estimate.</p>
+<p>•	Always build in contingency for problem solving, meetings and other unexpected events.</p>
+<p>•	Allow enough time to do a proper project estimate. Rushed estimates are inaccurate, high-risk estimates. <br/>For large development projects, the estimation step should really be regarded as a mini project.</p>
+<p>•	Where possible, use documented data from your organization’s similar past projects. It will result in the most accurate estimate.<br/> If your organization has not kept historical data, now is a good time to start collecting it.</p>
+<p>•	Use developer-based estimates, as the estimates prepared by people other than those who will do the work will be less accurate.</p>
+<p>•	Use several different people to estimate and use several different estimation techniques.</p>
+<p>•	Reconcile the estimates. Observe the convergence or spread among the estimates.<br/> Convergence means that you have got a good estimate. Wideband-Delphi technique can be used to gather and discuss estimates using a group of people, the intention being to produce an accurate, unbiased estimate.</p>
+<p>•	Re-estimate the project several times throughout its life cycle.</p>
+
+<br/>
+   	<br/>
+<br/>
+</body>
+</html>

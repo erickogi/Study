@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_extras"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.kimanikogi.study.Extras"
+    tools:showIn="@layout/activity_extras">
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <ImageView
+
+        android:src="@color/rippelColor"
+        android:layout_marginTop="18dp"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/image"/>
+    <TextView
+
+        android:saveEnabled="true"
+        android:selectAllOnFocus="true"
+        android:textIsSelectable="true"
+        android:textAlignment="center"
+        android:text="Scanned text will appear here \n
+     after scanning the document"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"/>
+       <Button
+           android:layout_marginBottom="18dp"
+           android:layout_above="@+id/detect"
+           style="@style/Base.Widget.AppCompat.Button"
+           android:background="@color/O"
+           android:id="@+id/clear"
+           android:text="Clear"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+       <Button
+           android:layout_marginBottom="18dp"
+      android:layout_above="@+id/capture"
+           style="@style/Base.Widget.AppCompat.Button"
+         android:background="@color/P"
+           android:id="@+id/detect"
+           android:text="Scan"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+    <Button
+        android:layout_alignParentBottom="true"
+        style="@style/Base.Widget.AppCompat.Button"
+        android:background="@color/colorPrimary"
+        android:id="@+id/capture"
+        android:text="Capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

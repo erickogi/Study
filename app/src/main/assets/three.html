@@ -1,0 +1,245 @@
+<html>
+	<meta charset="UTF-8">
+	<style>
+	
+	  @font-face {
+                    font-family: "ebrima";
+                    src: url('file:///android_asset/fonts/ebrima.TTF');
+                }
+		body{
+			font-family: ebrima, Tahoma, "Arial Black";
+		    font-size: 16px;		    
+		    word-wrap: normal;		
+		}
+		p{
+			line-height:22px;
+			padding-bottom:10px;			
+		}
+		h3, h4{
+			font-family: ebrima, Tahoma, "Arial Black";
+			color:#2c3e4c;
+			padding-bottom:3px;
+			border-bottom: 1px solid #444343;
+			font-weight:650;
+		}
+		td{
+			padding:10px;
+			border: 1px solid #2c3e4c;
+		}
+		
+		.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }	
+	
+</style>
+   <body>
+
+   	<h1>LECTURE 3 :SOFTWARE DESIGN </h1> 
+
+<p>•	Software design is a process to conceptualize the software requirements into software implementation. </p>
+<p>•	Software design takes the user requirements as challenges and tries to find optimum solution.</p>
+<p> While the software is being conceptualized, a plan is drawn to find the best possible design for implementing the intended solution. </p>
+<h4>There are multiple variants of software design. </h4>
+
+<h3>Structured Design</h3>
+<p>Structured design is a conceptualization of problem into several well-organized elements of solution.<br/> It is basically concerned with the solution design.</p> 
+<h4>Benefits of structured design</h4>
+<p>•	it gives better understanding of how the problem is being solved. </p>
+<p>•	Structured design also makes it simpler for designer to concentrate on the problem more accurately. </p>
+
+<p>Structured design is mostly based on ‘divide and conquer’ strategy where a problem is broken into several small problems and each small problem is individually solved until the whole problem is solved.</p>
+<p>The small pieces of problem are solved by means of solution modules. </p>
+<p>Structured design emphasis that these modules be well organized in order to achieve precise solution. </p>
+<p>These modules are arranged in hierarchy. They communicate with each other. 
+A good structured design always follows some rules for communication among multiple modules, namely -</p>
+<h4>Cohesion - grouping of all functionally related elements.</h4>
+<h4>Coupling - communication between different modules.</h4>
+<p><i>A good structured design has high cohesion and low coupling arrangements.</i></P>
+
+<h3>Function Oriented Design</h3>
+<p>•	The system is comprised of many smaller sub-systems known as functions. </p>
+<p>•	These functions are capable of performing significant task in the system. </p>
+<p>•	The system is considered as top view of all functions.</p>
+<p>Function oriented design inherits some properties of structured design where divide and conquer methodology is used.<br/>This design mechanism divides the whole system into smaller functions, which provides means of abstraction by concealing the information and their operation.</p>
+<p>These functional modules can share information among themselves by means of information passing and using information available globally.</p>
+<p>Another characteristic of functions is that when a program calls a function, the function changes the state of the program, which sometimes is not acceptable by other modules. </p>
+<p>Function oriented design works well where the system state does not matter and program/functions work on input rather than on a state.</p>
+
+<h3>Design Process</h3>
+<p>•	The whole system is seen as how data flows in the system by means of data flow diagram.</p>
+<p>•	DFD depicts how functions changes data and state of entire system.</p>
+<p>•	The entire system is logically broken down into smaller units known as functions on the basis of their operation in the system.</p>
+<p>•	Each function is then described at large.</p>
+<h3>Object Oriented Design</h3>
+<p>Object oriented design works around the entities and their characteristics instead of functions involved in the software system. This design strategies focuses on entities and its characteristics. </p>
+<p>The whole concept of software solution revolves around the engaged entities.</p>
+<h4>Concepts of Object Oriented Design:</h4>
+<p>•	Objects - All entities involved in the solution design are known as objects. For example, person, banks, company and customers are treated as objects.</p>
+<p> Every entity has some attributes associated to it and has some methods to perform on the attributes.</p>
+<p>•	Classes - A class is a generalized description of an object.</p>
+<p> An object is an instance of a class. Class defines all the attributes, which an object can have and methods, which defines the functionality of the object.</p>
+<p>In the solution design, attributes are stored as variables and functionalities are defined by means of methods or procedures.</p>
+<p>•	Encapsulation - In OOD, the attributes (data variables) and methods (operation on the data) are bundled together is called encapsulation.</p>
+<p> Encapsulation not only bundles important information of an object together, but also restricts access of the data and methods from the outside world.</p>
+<p> <i>This is called information hiding.</i></p>
+<p>•	Inheritance - OOD allows similar classes to stack up in hierarchical manner where the lower or sub-classes can import, implement and re-use allowed variables and methods from their immediate super classes.</p>
+<p> This property of OOD is known as inheritance. This makes it easier to define specific class and to create generalized classes from specific ones.</p>
+<p>•	Polymorphism - OOD languages provide a mechanism where methods performing similar tasks but vary in arguments, can be assigned same name.</p>
+<p> This is called polymorphism, which allows a single interface performing tasks for different types. Depending upon how the function is invoked, respective portion of the code gets executed.</p> 
+
+<h3>Design Process</h3>
+<p>Software design process can be perceived as series of well-defined steps.</p>
+<p> Though it varies according to design approach (function oriented or object oriented, yet It may have the following steps involved:</p>
+<p>•	A solution design is created from requirement or previous used system and/or system sequence diagram.</p>
+<p>•	Objects are identified and grouped into classes on behalf of similarity in attribute characteristics.</p>
+<p>•	Class hierarchy and relation among them is defined.</p>
+<p>•	Application framework is defined.</p>
+
+<h3>Software Design Approaches</h3>
+<p>Here are two generic approaches for software designing:</p>
+
+<h4>Top Down Design</h4>
+<p>We know that a system is composed of more than one sub-systems and it contains a number of components. </p>
+<p>Further, these sub-systems and components may have their on set of sub-system and components and creates hierarchical structure in the system.</p>
+<p>Top-down design takes the whole software system as one entity and then decomposes it to achieve more than one sub-system or component based on some characteristics.</p>
+<p> Each sub-system or component is then treated as a system and decomposed further. This process keeps on running until the lowest level of system in the top-down hierarchy is achieved.</p>
+<p>Top-down design starts with a generalized model of system and keeps on defining the more specific part of it. When all components are composed the whole system comes into existence.</p>
+<p>Top-down design is more suitable when the software solution needs to be designed from scratch and specific details are unknown.</p>
+
+<h4>Bottom-up Design</h4>
+<p>The bottom up design model starts with most specific and basic components. It proceeds with composing higher level of components by using basic or lower level components.</p>
+<p> It keeps creating higher level components until the desired system is not evolved as one single component. With each higher level, the amount of abstraction is increased.</p>
+<P>Bottom-up strategy is more suitable when a system needs to be created from some existing system, where the basic primitives can be used in the newer system.</p>
+<p>Both, top-down and bottom-up approaches are not practical individually. Instead, a good combination of both is used.</p>
+
+<h2>SOFTWARE USER INTERFACE DESIGN</h2>
+
+<p>User interface is the front-end application view to which user interacts in order to use the software. User can manipulate and control the software as well as hardware by means of user interface.</p>
+<p> Today, user interface is found at almost every place where digital technology exists, right from computers, mobile phones, cars, music players, airplanes, ships etc.</p>
+<p>User interface is part of software and is designed such a way that it is expected to provide the user insight of the software. </p>
+
+	<p>UI provides fundamental platform for human-computer interaction. 
+UI can be graphical, text-based, audio-video based, depending upon the underlying hardware and software combination. UI can be hardware or software or a combination of both.</p>
+
+<p><i>The software becomes more popular if its user interface is:</i></p>
+<p>•	Attractive</p>
+<p>•	Simple to use</p>
+<p>•	Responsive in short time</p>
+<p>•	Clear to understand</p>
+<p>•	Consistent on all interfacing screens</p>
+<h4>UI is broadly divided into two categories:</h4>
+<p>•	Command Line Interface</p>
+<p>•	Graphical User Interface</p>
+
+<h3>Command Line Interface (CLI)</h3>
+<p>CLI has been a great tool of interaction with computers until the video display monitors came into existence. CLI is first choice of many technical users and programmers. CLI is minimum interface a software can provide to its users.</p>
+<p>CLI provides a command prompt, the place where the user types the command and feeds to the system. The user needs to remember the syntax of command and its use. Earlier CLI were not programmed to handle the user errors effectively.</p>
+<p>CLI Elements</p>
+<p><i>A text-based command line interface can have the following elements:</i></p>
+<p>•	Command Prompt - It is text-based notifier that is mostly shows the context in which the user is working. It is generated by the software system.</p>
+<p>•	Cursor - It is a small horizontal line or a vertical bar of the height of line, to represent position of character while typing. Cursor is mostly found in blinking state. It moves as the user writes or deletes something.</p>
+<p>•	Command - A command is an executable instruction. It may have one or more parameters. Output on command execution is shown inline on the screen. When output is produced, command prompt is displayed on the next line.</p>
+
+<h3>Graphical User Interface</h3>
+<p>Graphical User Interface provides the user graphical means to interact with the system. GUI can be combination of both hardware and software. </p>
+	<p>Using GUI, user interprets the software.</p>
+<p>Typically, GUI is more resource consuming than that of CLI. With advancing technology, the programmers and designers create complex GUI designs that work with more efficiency, accuracy and speed.</p>
+</br>
+<h3>GUI Elements<h3>
+<p>GUI provides a set of components to interact with software or hardware.
+Every graphical component provides a way to work with the system.</p>
+ <h5>A GUI system has following elements such as:</h5>
+<p>•	Window - An area where contents of application are displayed.</p>
+<p> Contents in a window can be displayed in the form of icons or lists, if the window represents file structure. It is easier for a user to navigate in the file system in an exploring window. </p>
+<p>Windows can be minimized, resized or maximized to the size of screen. They can be moved anywhere on the screen. A window may contain another window of the same application, called child window.</p>
+
+<p>•	Tabs - If an application allows executing multiple instances of itself, they appear on the screen as separate windows.</p>
+<p> Tabbed Document Interface has come up to open multiple documents in the same window. This interface also helps in viewing preference panel in application. All modern web-browsers use this feature.</p>
+<p>•	Menu - Menu is an array of standard commands, grouped together and placed at a visible place (usually top) inside the application window. The menu can be programmed to appear or hide on mouse clicks.</p>
+<p>•	Icon - An icon is small picture representing an associated application. When these icons are clicked or double clicked, the application window is opened.</p>
+<p> Icon displays application and programs installed on a system in the form of small pictures.</p>
+
+<p>•	Cursor - Interacting devices such as mouse, touch pad, digital pen are represented in GUI as cursors. </p>
+<p>On screen cursor follows the instructions from hardware in almost real-time. Cursors are also named pointers in GUI systems. They are used to select menus, windows and other application features.</p>
+
+<h4>Application specific GUI components<h4>
+<p><i>A GUI of an application contains one or more of the listed GUI elements:</i><p>
+<p>•	Application Window - Most application windows uses the constructs supplied by operating systems but many use their own customer created windows to contain the contents of application.</p>
+<p>•	Dialogue Box - It is a child window that contains message for the user and request for some action to be taken. For Example: Application generate a dialogue to get confirmation from user to delete a file.</p>
+<p>•	Text-Box - Provides an area for user to type and enter text-based data.</p>
+<p>•	Buttons - They imitate real life buttons and are used to submit inputs to the software.</p>
+ 
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/buttons.png" alt="evolution" />
+</div>
+<p>•	Radio-button - Displays available options for selection. Only one can be selected among all offered.</p>
+<p>•	Check-box - Functions similar to list-box. When an option is selected, the box is marked as checked. Multiple options represented by check boxes can be selected.</p>
+<p>•	List-box - Provides list of available items for selection. More than one item can be selected.</p>
+
+<div class="erb-image-wrapper">
+<img src="file:///android_asset/list.png" alt="evolution" />
+</div>
+ 
+<h4>Other impressive GUI components are:</h4>
+<p>•	Sliders</p>
+<p>•	Combo-box</p>
+<p>•	Data-grid</p>
+<p>•	Drop-down list</p>
+
+<h4>User Interface Design Activities</h4>
+<p>There are a number of activities performed for designing user interface.</p>
+<p> The process of GUI design and implementation is alike SDLC. Any model can be used for GUI implementation among Waterfall, Iterative or Spiral Model.</p>
+<p>A model used for GUI design and development should fulfill these GUI specific steps.</p>
+ <div class="erb-image-wrapper">
+<img src="file:///android_asset/designactivities.png" alt="design" />
+</div>
+<p>•	GUI Requirement Gathering - The designers may like to have list of all functional and non-functional requirements of GUI. </p>
+<p>This can be taken from user and their existing software solution.</p>
+<p>•	User Analysis - The designer studies who is going to use the software GUI.</p> 
+<p>The target audience matters as the design details change according to the knowledge and competency level of the user.</p>
+ <p>If user is technical savvy, advanced and complex GUI can be incorporated. For a novice user, more information is included on how-to of software.</p>
+<p>•	Task Analysis - Designers have to analyze what task is to be done by the software solution. Here in GUI, it does not matter how it will be done. <br/>Tasks can be represented in hierarchical manner taking one major task and dividing it further into smaller sub-tasks. Tasks provide goals for GUI presentation. <br/>Flow of information among sub-tasks determines the flow of GUI contents in the software.</p>
+<p>•	GUI Design & implementation - Designers after having information about requirements, tasks and user environment, design the GUI and implements into code and embed the GUI with working or dummy software in the background. It is then self-tested by the developers.</p>
+<p>•	Testing - GUI testing can be done in various ways. Organization can have in-house inspection, direct involvement of users and release of beta version are few of them. <br/>Testing may include usability, compatibility, user acceptance etc.</p>
+
+<h3>GUI Implementation Tools</h3>
+<p>There are several tools available using which the designers can create entire GUI on a mouse click. <br/>Some tools can be embedded into the software environment (IDE).</p>
+<p>GUI implementation tools provide powerful array of GUI controls. For software customization, designers can change the code accordingly.</p>
+<p>There are different segments of GUI tools according to their different use and platform.</p>
+
+<p>Example<br/>
+Mobile GUI, Computer GUI, Touch-Screen GUI etc. Here is a list of few tools which come handy to build GUI:</p>
+<p>•	FLUID</p>
+<p>•	AppInventor (Android)</p>
+<p>•	LucidChart</p>
+<p>•	Wavemaker</p>
+<p>•	Visual Studio</p>
+
+<h4>User Interface Golden rules</h4>
+<p><i>The following rules are mentioned to be the golden rules for GUI design, described by Shneiderman and Plaisant in their book (Designing the User Interface).</i></p>
+<p>•	Strive for consistency - <br/>Consistent sequences of actions should be required in similar situations. <br/>Identical terminology should be used in prompts, menus, and help screens. Consistent commands should be employed throughout.</p>
+<P>•	Enable frequent users to use short-cuts - <br/>The user’s desire to reduce the number of interactions increases with the frequency of use. <br/>Abbreviations, function keys, hidden commands, and macro facilities are very helpful to an expert user.</p>
+<p>•	Offer informative feedback - <br/>For every operator action, there should be some system feedback. For frequent and minor actions, the response must be modest, while for infrequent and major actions, the response must be more substantial.</p>
+<p>•	Design dialog to yield closure - <br/>Sequences of actions should be organized into groups with a beginning, middle, and end.<br/> The informative feedback at the completion of a group of actions gives the operators the satisfaction of accomplishment, a sense of relief, the signal to drop contingency plans and options from their minds, and this indicates that the way ahead is clear to prepare for the next group of actions.</p>
+<p>•	Offer simple error handling - <br/>As much as possible, design the system so the user will not make a serious error.</p> If an error is made, the system should be able to detect it and offer simple, comprehensible mechanisms for handling the error.</p>
+<p>•	Permit easy reversal of actions - <br/>This feature relieves anxiety, since the user knows that errors can be undone. Easy reversal of actions encourages exploration of unfamiliar options. The units of reversibility may be a single action, a data entry, or a complete group of actions.</p>
+<p>•	Support internal locus of control - <br/>Experienced operators strongly desire the sense that they are in charge of the system and that the system responds to their actions. Design the system to make users the initiators of actions rather than the responders.</p>
+<p>•	Reduce short-term memory load - <br/>The limitation of human information processing in short-term memory requires the displays to be kept simple, multiple page displays be consolidated, window-motion frequency be reduced, and sufficient training time be allotted for codes, mnemonics, and sequences of actions.</p>
+
+
+<br/>
+<br/>
+</body>
+</html> 
+
+

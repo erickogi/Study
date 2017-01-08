@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/www"
+
+            android:title="World Wide web" />
+        <item
+            android:id="@+id/concepts"
+
+            android:title="Basic concepts" />
+        <item
+            android:id="@+id/overview"
+
+            android:title="HTML Overview" />
+        <item
+            android:id="@+id/htmltext"
+
+            android:title="HTML Text" />
+        <item
+            android:id="@+id/listt"
+
+            android:title="List" />
+        <item
+            android:id="@+id/images"
+
+            android:title="Images" />
+        <item
+            android:id="@+id/link"
+
+            android:title="Links" />
+        <item
+            android:id="@+id/tables"
+
+            android:title="Table" />
+        <item
+            android:id="@+id/background"
+
+            android:title="Background" />
+        <item
+            android:id="@+id/frames"
+
+            android:title="Frames" />
+        <item
+            android:id="@+id/forms"
+
+            android:title="Forms" />
+    </group>
+    <item android:title="MORE">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+
+                android:title="CSS" />
+             <item
+                            android:id="@+id/nav_send"
+
+                            android:title="JavaScript" />
+        </menu>
+    </item>
+
+</menu>

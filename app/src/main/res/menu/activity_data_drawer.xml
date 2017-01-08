@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/one"
+
+            android:title="Introduction" />
+        <item
+            android:id="@+id/two"
+
+            android:title="Asymptotic Notations" />
+        <item
+            android:id="@+id/three"
+
+            android:title="Data Definition" />
+        <item
+            android:id="@+id/four"
+
+            android:title="Arrays" />
+        <item
+            android:id="@+id/five"
+
+            android:title="linked list" />
+        <item
+            android:id="@+id/six"
+
+            android:title="Doubly Linked List" />
+        <item
+            android:id="@+id/seven"
+
+            android:title="Singly Linked List" />
+        <item
+            android:id="@+id/twelve"
+
+            android:title="Trees" />
+        <item
+            android:id="@+id/eight"
+
+            android:title="STACKS" />
+        <item
+            android:id="@+id/nine"
+
+            android:title="Queues" />
+        <item
+            android:id="@+id/ten"
+
+            android:title="Linear search" />
+        <item
+            android:id="@+id/eleven"
+
+            android:title="Binary search" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>

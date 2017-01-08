@@ -1,0 +1,1081 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Ebrima;
+	panose-1:2 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.kwd
+	{mso-style-name:kwd;}
+span.pln
+	{mso-style-name:pln;}
+span.typ
+	{mso-style-name:typ;}
+span.pun
+	{mso-style-name:pun;}
+span.str
+	{mso-style-name:str;}
+span.com
+	{mso-style-name:com;}
+span.lit
+	{mso-style-name:lit;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:71.1pt 358.0pt 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection2
+	{page:WordSection2;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima'>What is
+a Constructor</span></b></p>
+
+</div>
+
+<b><span style='font-size:12.0pt;font-family:Ebrima'><br clear=all
+style='page-break-before:always'>
+</span></b>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:16.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:98%'><a name=page17></a><span style='font-size:12.0pt;line-height:
+98%;font-family:Ebrima;color:#222426'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>A method with the same name as class name used for the purpose
+of creating an object in a valid state</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt;line-height:99%'><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>It does not return a value not even void</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt;line-height:99%'><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>It may or may not have parameters (arguments)</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt;line-height:99%'><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'>4)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>A class contains one or more constructors for making new objects
+of that class</span></p>
+
+<p class=MsoNormal style='line-height:.4pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:35.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:98%'><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>5)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>If
+(and only if) the programmer does not write a constructor, Java provides a
+default constructor with no arguments.</span></p>
+
+<p class=MsoNormal style='line-height:19.5pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>The default constructor sets instance variables as:</span></b></p>
+
+<p class=MsoNormal style='line-height:19.65pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>-------numeric
+types are set to zero</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>-------boolean
+variables are set to false</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>-------char
+variables are set to </span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>-------object
+variables are set to null.</span></p>
+
+<p class=MsoNormal style='line-height:14.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>When a constructor executes, before executing its own code:</span></b></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:58.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>It
+implicitly call the default constructor of its super class Or can make this
+constructor call explicitly, with super();</span></p>
+
+<p class=MsoNormal style='line-height:19.9pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:5.0pt;line-height:105%'><span
+style='font-size:12.0pt;line-height:105%;font-family:Ebrima;color:#222426'>A
+constructor for a class can call another constructor for the same class by
+putting this(); as the first thing in the constructor. This allows you to avoid
+repeating code.</span></p>
+
+<p class=MsoNormal style='line-height:18.85pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>A Class do not inherit the constructors of a super class.</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Types
+of Constructors</span></b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'><br>
+There are three types of constructors: default, no-arg and parameterised.<br>
+<b>Default constructor:</b>&nbsp;If you do not define any constructor in your
+class, java generates one for you by default. This constructor is known as
+default constructor. You would not find it in your source code but it would
+present there. It would look like this if you could see it. Default constructor
+for class Demo:</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>public</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Demo</span><span style='font-family:
+Consolas;color:black'>()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>no-arg
+constructor:</span></b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>&nbsp;Constructor with no arguments is known as no-arg constructor.
+The signature is same as default constructor, however body can have any code
+unlike default constructor where the body does nothing.</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Important
+point</span></b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>&nbsp;to note here is that whatever constructor you write in
+your class cannot be called default even if you write&nbsp;<b>public Demo() { }</b>in
+your class it cannot be called default since you are writing it. The
+constructor is called default only when it has been generated by java.</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Example:
+A no-arg constructor for class&nbsp;<b>Demo</b></span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>class</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Demo</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#2B91AF'>Demo</span><span style='font-family:Consolas;color:black'>()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>         </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;This is a default
+constructor&quot;</span><span style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Parameterized
+constructor</span></b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>: Constructor with arguments is known as parameterized
+constructor.</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>class</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Demo</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#2B91AF'>Demo</span><span style='font-family:Consolas;color:black'>(</span><span
+style='font-family:Consolas;color:darkblue'>int</span><span style='font-family:
+Consolas;color:black'> num, </span><span style='font-family:Consolas;
+color:#2B91AF'>String</span><span style='font-family:Consolas;color:black'>
+str)</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>           </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;This is a parameterized
+constructor&quot;</span><span style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>How
+to call a constructor?</span></b><span style='font-size:12.0pt;font-family:
+"Trebuchet MS",sans-serif;color:#222426'><br>
+To call a constructor use the keyword&nbsp;<b>new</b>, followed by the name of
+class, followed by parameters if any. For example to create the object of
+class&nbsp;<b>Demo</b>, you can call the constructor like this:&nbsp;<b>new
+Demo()</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:18.0pt;font-family:"Trebuchet MS",sans-serif;color:black'>Object
+creation using constructor</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Lets
+say class name is “Demo”</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>1)
+I’m declaring a reference variable of class Demo-</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>class</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Demo</span><span style='font-family:
+Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>2)
+Object creation – Calling default constructor for creating the object of class
+Demo (new keyword followed by class name)</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>new</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Demo</span><span style='font-family:
+Consolas;color:black'>();</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>3)
+Now, I’m assigning the object to the reference –</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>class</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Demo</span><span style='font-family:
+Consolas;color:black'> = </span><span style='font-family:Consolas;color:darkblue'>new</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#2B91AF'>Demo</span><span style='font-family:Consolas;color:black'>();</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:18.0pt;font-family:"Trebuchet MS",sans-serif;color:black'>What
+if you don’t write a constructor in a class?</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>As
+discussed above, if you don’t write a constructor in your class, java would
+generate one for you. Lets take a look at the code below to understand it
+litter better:</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>class</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Example</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>void</span><span style='font-family:Consolas;color:black'>
+demoMethod()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;hello&quot;</span><span
+style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>static</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>void</span><span style='font-family:
+Consolas;color:black'> main(</span><span style='font-family:Consolas;
+color:#2B91AF'>String</span><span style='font-family:Consolas;color:black'>
+args[])</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              </span><span style='font-family:Consolas;color:#2B91AF'>Example</span><span
+style='font-family:Consolas;color:black'> obj = </span><span style='font-family:
+Consolas;color:darkblue'>new</span><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>Example</span><span
+style='font-family:Consolas;color:black'>();</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              obj.demoMethod();</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>In
+public static void main I am creating the object of class&nbsp;<b>Example</b>and
+in order to do that I have invoked the default constructor of class Example(
+note the new Example()).<b>&nbsp;But where did I write the constructor?&nbsp;</b>&nbsp;No
+I didn’t the java did it for me.</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:18.0pt;font-family:"Trebuchet MS",sans-serif;color:black'>If
+you understood the example then I may need to test your skills – Guess the
+output of below Java program</span></b></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>class</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Example2</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>private</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>int</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>var</span><span style='font-family:
+Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#2B91AF'>Example2</span><span style='font-family:Consolas;color:black'>()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>             </span><span style='font-family:Consolas;color:gray'>//code
+for default one</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>             </span><span style='font-family:Consolas;color:darkblue'>var</span><span
+style='font-family:Consolas;color:black'> = </span><span style='font-family:
+Consolas;color:maroon'>10</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#2B91AF'>Example2</span><span style='font-family:Consolas;color:black'>(</span><span
+style='font-family:Consolas;color:darkblue'>int</span><span style='font-family:
+Consolas;color:black'> num)</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>             </span><span style='font-family:Consolas;color:gray'>//code
+for parameterized one</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>             </span><span style='font-family:Consolas;color:darkblue'>var</span><span
+style='font-family:Consolas;color:black'> = num;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>int</span><span style='font-family:Consolas;color:black'>
+getValue()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              </span><span style='font-family:Consolas;color:darkblue'>return</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>var</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>static</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>void</span><span style='font-family:
+Consolas;color:black'> main(</span><span style='font-family:Consolas;
+color:#2B91AF'>String</span><span style='font-family:Consolas;color:black'>
+args[])</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              </span><span style='font-family:Consolas;color:#2B91AF'>Example2</span><span
+style='font-family:Consolas;color:black'> obj2 = </span><span style='font-family:
+Consolas;color:darkblue'>new</span><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>Example2</span><span
+style='font-family:Consolas;color:black'>();</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;var is: &quot;</span><span
+style='font-family:Consolas;color:black'>+obj2.getValue());</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Output:</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>var</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>is</span><span style='font-family:
+Consolas;color:black'>: </span><span style='font-family:Consolas;color:maroon'>10</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Now
+replace the code of public static void main with the code below and guess
+answer –</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>Example2</span><span
+style='font-family:Consolas;color:black'> obj2 = </span><span style='font-family:
+Consolas;color:darkblue'>new</span><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>Example2</span><span
+style='font-family:Consolas;color:black'>(</span><span style='font-family:Consolas;
+color:maroon'>77</span><span style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;var is: &quot;</span><span
+style='font-family:Consolas;color:black'>+obj2.getValue());</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Output</span></b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>:</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>var</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>is</span><span style='font-family:
+Consolas;color:black'>: </span><span style='font-family:Consolas;color:maroon'>77</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Explanation</span></b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>:
+you must be wondering why the answer is 77- Let me explain why is it so –
+Observe that while creating object I have passed 77 as a parameter inside parenthesis,
+that’s why instead of default one, parameterized constructor with integer
+argument got invoked, where in I have assigned the argument value to variable
+var.</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Again,
+replace the code with the below code and try to find the answer –</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>Example2</span><span
+style='font-family:Consolas;color:black'> obj3 = </span><span style='font-family:
+Consolas;color:darkblue'>new</span><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>Example2</span><span
+style='font-family:Consolas;color:black'>();</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>Example2</span><span
+style='font-family:Consolas;color:black'> obj2 = </span><span style='font-family:
+Consolas;color:darkblue'>new</span><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>Example2</span><span
+style='font-family:Consolas;color:black'>(</span><span style='font-family:Consolas;
+color:maroon'>77</span><span style='font-family:Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;var is: &quot;</span><span
+style='font-family:Consolas;color:black'>+obj3.getValue());</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Output:</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>var</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>is</span><span style='font-family:
+Consolas;color:black'>: </span><span style='font-family:Consolas;color:maroon'>10</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Important
+Point to Note: If you are defining parametrised constructor then you may ran
+into trouble. Handle them with care :)</span></b><span style='font-size:12.0pt;
+font-family:"Trebuchet MS",sans-serif;color:#222426'><br>
+What kind of trouble? Lets have a look at the code below:</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>class</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Example3</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>private</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>int</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>var</span><span style='font-family:
+Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#2B91AF'>Example3</span><span style='font-family:Consolas;color:black'>(</span><span
+style='font-family:Consolas;color:darkblue'>int</span><span style='font-family:
+Consolas;color:black'> num)</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>             </span><span style='font-family:Consolas;color:darkblue'>var</span><span
+style='font-family:Consolas;color:black'>=num;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>int</span><span style='font-family:Consolas;color:black'>
+getValue()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              </span><span style='font-family:Consolas;color:darkblue'>return</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>var</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>static</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>void</span><span style='font-family:
+Consolas;color:black'> main(</span><span style='font-family:Consolas;
+color:#2B91AF'>String</span><span style='font-family:Consolas;color:black'>
+args[])</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              </span><span style='font-family:Consolas;color:#2B91AF'>Example3</span><span
+style='font-family:Consolas;color:black'> myobj = </span><span
+style='font-family:Consolas;color:darkblue'>new</span><span style='font-family:
+Consolas;color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>Example3</span><span
+style='font-family:Consolas;color:black'>();</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              </span><span style='font-family:Consolas;color:#2B91AF'>System</span><span
+style='font-family:Consolas;color:black'>.</span><span style='font-family:Consolas;
+color:darkblue'>out</span><span style='font-family:Consolas;color:black'>.println(</span><span
+style='font-family:Consolas;color:maroon'>&quot;value of var is: &quot;</span><span
+style='font-family:Consolas;color:black'>+myobj.getValue());</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>      }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Output</span></b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>:
+It will throw a&nbsp;<b>compilation error!!. The reason is</b>&nbsp;when you
+don’t define any constructor in your class, compiler defines default one for
+you, however when you declare any constructor (in above example I have already
+defined a parameterized constructor), compiler doesn’t do it for you.<br>
+Since I have defined a constructor in above code, compiler didn’t create
+default one. While creating object I am invoking default one, which doesn’t
+exist in above code. The code gives an compilation error.</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>If
+we remove the parametrised constructor from the code above then the code would
+run fine because, java would generate the default constructor if it doesn’t
+find any in the code.</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:22.5pt;font-family:"Trebuchet MS",sans-serif;color:black'>Constructor
+Chaining</span></b></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Constructor
+chaining is nothing but a scenario where in one constructor calls the
+constructor of its super class implicitly or explicitly. Suppose there is a
+class which inherits another class, in this case if you create the object of
+child class then first super class(or parent class) constructor will be invoked
+and then child class constructor will be invoked.</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Have
+a look at the example below:</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>class</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Human</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        </span><span style='font-family:Consolas;color:#2B91AF'>String</span><span
+style='font-family:Consolas;color:black'> s1, s2;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#2B91AF'>Human</span><span style='font-family:Consolas;color:black'>()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              s1 =</span><span style='font-family:Consolas;
+color:maroon'>&quot;Super class&quot;</span><span style='font-family:Consolas;
+color:black'>;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              s2 =</span><span style='font-family:Consolas;
+color:maroon'>&quot;Parent class&quot;</span><span style='font-family:Consolas;
+color:black'>;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#2B91AF'>Human</span><span style='font-family:Consolas;color:black'>(</span><span
+style='font-family:Consolas;color:#2B91AF'>String</span><span style='font-family:
+Consolas;color:black'> str)</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>               s1= str;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>               s2= str;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>class</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Boy</span><span style='font-family:
+Consolas;color:black'> </span><span style='font-family:Consolas;color:darkblue'>extends</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#2B91AF'>Human</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:#2B91AF'>Boy</span><span style='font-family:Consolas;color:black'>()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>              s2 =</span><span style='font-family:Consolas;
+color:maroon'>&quot;Child class&quot;</span><span style='font-family:Consolas;
+color:black'>;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>void</span><span style='font-family:Consolas;color:black'>
+disp()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>               </span><span style='font-family:Consolas;
+color:#2B91AF'>System</span><span style='font-family:Consolas;color:black'>.</span><span
+style='font-family:Consolas;color:darkblue'>out</span><span style='font-family:
+Consolas;color:black'>.println(</span><span style='font-family:Consolas;
+color:maroon'>&quot;String 1 is: &quot;</span><span style='font-family:Consolas;
+color:black'>+s1);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>               </span><span style='font-family:Consolas;
+color:#2B91AF'>System</span><span style='font-family:Consolas;color:black'>.</span><span
+style='font-family:Consolas;color:darkblue'>out</span><span style='font-family:
+Consolas;color:black'>.println(</span><span style='font-family:Consolas;
+color:maroon'>&quot;String 2 is: &quot;</span><span style='font-family:Consolas;
+color:black'>+s2);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        </span><span style='font-family:Consolas;color:darkblue'>public</span><span
+style='font-family:Consolas;color:black'> </span><span style='font-family:Consolas;
+color:darkblue'>static</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:darkblue'>void</span><span style='font-family:
+Consolas;color:black'> main(</span><span style='font-family:Consolas;
+color:#2B91AF'>String</span><span style='font-family:Consolas;color:black'>
+args[])</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        {</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>                </span><span style='font-family:Consolas;
+color:#2B91AF'>Boy</span><span style='font-family:Consolas;color:black'> obj = </span><span
+style='font-family:Consolas;color:darkblue'>new</span><span style='font-family:
+Consolas;color:black'> </span><span style='font-family:Consolas;color:#2B91AF'>Boy</span><span
+style='font-family:Consolas;color:black'>();</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>                obj.disp();</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>        }</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Output:</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:#2B91AF'>String</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:maroon'>1</span><span style='font-family:
+Consolas;color:black'> </span><span style='font-family:Consolas;color:darkblue'>is</span><span
+style='font-family:Consolas;color:black'>: </span><span style='font-family:
+Consolas;color:#2B91AF'>Super</span><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:darkblue'>class</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:#2B91AF'>String</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:maroon'>2</span><span style='font-family:
+Consolas;color:black'> </span><span style='font-family:Consolas;color:darkblue'>is</span><span
+style='font-family:Consolas;color:black'>: </span><span style='font-family:
+Consolas;color:#2B91AF'>Child</span><span style='font-family:Consolas;
+color:black'> </span><span style='font-family:Consolas;color:darkblue'>class</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Explanation
+of the example:</span></b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'><br>
+Human is a super class of Boy class. In above program I have created an object
+of Boy class, As per the rule super class constructor (Human()) invoked first
+which set the s1 &amp; s2 value, later child class constructor(Boy()) gets
+invoked, which overridden s2 value.</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Note:&nbsp;</span></b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Whenever
+child class constructor gets invoked it implicitly invokes the constructor of
+parent class. In simple terms you can say that compiler puts a&nbsp;<b>super();
+statement&nbsp;</b>in the child class constructor. Read more about&nbsp;<a
+href="http://beginnersbook.com/2014/07/super-keyword-in-java-with-example/"
+target="_blank"><b><span style='color:#7DC246'>super keyword here</span></b></a>.</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><b><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Question
+you may have</span></b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>: In the above example no-arg constructor of super class
+invoked, I want to invoke arg constructor(Parameterized).</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Its
+so simple.</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>change
+the code of public Boy() to something like this –</span></p>
+
+<p class=MsoNormal style='margin-bottom:19.5pt;background:white'><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Note:
+super() should be the first statement in the constructor.</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:darkblue'>public</span><span style='font-family:Consolas;color:black'> </span><span
+style='font-family:Consolas;color:#2B91AF'>Boy</span><span style='font-family:
+Consolas;color:black'>()</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>{</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     </span><span style='font-family:Consolas;color:darkblue'>super</span><span
+style='font-family:Consolas;color:black'>(</span><span style='font-family:Consolas;
+color:maroon'>&quot;calling super one&quot;</span><span style='font-family:
+Consolas;color:black'>);</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>     s2 =</span><span style='font-family:Consolas;color:maroon'>&quot;Child
+class&quot;</span><span style='font-family:Consolas;color:black'>;</span></p>
+
+<p class=MsoNormal style='background:#EEEEEE'><span style='font-family:Consolas;
+color:black'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><b><span
+style='font-size:18.0pt;font-family:"Trebuchet MS",sans-serif;color:black'>Understood
+till now – Here are few more points about constructors</span></b></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>Every class has a constructor whether it’s normal one or a
+abstract class.</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>As stated above, constructor are not methods and they don’t have
+any return type.</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>Constructor name and class name should be the same.</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>Constructor can use any access specifier, they can be declared
+as private also. Private constructors are possible in java but there scope is
+within the class only.</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>Like constructors method can also have name same as class name,
+but still they have return type, though which we can identify them that they
+are methods not constructors.</span></b></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>If you don’t define any constructor within the class, compiler
+will do it for you and it will create a constructor for you.</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>this() and super() should be the first statement in the
+constructor code.</span></b><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>&nbsp;If you don’t mention them, compiler does it for you
+accordingly.</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>Constructor overloading is possible but overriding is not
+possible. Which means we can have overloaded constructor in our class but we
+can’t override a constructor.</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>Constructors can not be inherited.</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>10.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>If
+Super class doesn’t have a no-arg(default) constructor then compiler would not
+define a default one in child class as it does in normal scenario.</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>11.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Interfaces
+do not have constructors.</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>12.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>Abstract
+can have constructors and these will get invoked when a class, which implements
+interface,&nbsp;gets instantiated. (i.e. object creation of concrete class).</span></p>
+
+<p class=MsoNormal style='margin-left:30.0pt;text-indent:-.25in;background:
+white'><span style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;
+color:#222426'>13.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:"Trebuchet MS",sans-serif;color:#222426'>A
+constructor can also invoke another constructor of the same class – By using
+this(). If you wanna invoke a arg-constructor then give something like:&nbsp;<b>this(parameter
+list)</b>.</span></p>
+    <p class=MsoNormal> <a href="http://beginnersbook.com/2013/04/oops-concepts/">For MORE CLICK HERE</p>
+<p class=MsoNormal>&nbsp;</p>
+<br/>
+    <br/>
+</div>
+
+</body>
+
+</html>

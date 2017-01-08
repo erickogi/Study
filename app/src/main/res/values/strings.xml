@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Study</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_software">Software</string>
+    <string name="title_activity_oop">Oop</string>
+    <string name="title_activity_webdesign">Webdesign</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">All Notes In One Place</string>
+    <string name="slide_1_desc">The easiest way to revise at your own comfort!</string>
+
+    <string name="slide_2_title">Simplified And Compressed Notes</string>
+    <string name="slide_2_desc">Carefully summarized for a simple read and great understanding!</string>
+
+    <string name="slide_3_title">Share With Your Classmates</string>
+    <string name="slide_3_desc">Dont be mean help others revise too !</string>
+
+    <string name="slide_4_title">And Finaly its Free</string>
+    <string name="slide_4_desc">Who doesnt like fre things !</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> welcome -> </string>
+    <string name="play_again">Play Again</string>
+
+    <string name="contribute">Study Everywhere  :By kogi Eric n kiki Sam</string>
+    <string name="title_activity_webdevper">HTML</string>
+    <string name="title_activity_webdevlec">HTML/CSS/JAVASCRIPTClass Notes</string>
+    <string name="title_activity_preservation">preservation</string>
+    <string name="role"><![CDATA[Role of Information Centres & The Aim and Objectives of Preservation Management]]></string>
+    <string name="planning">Planning for preservation programme</string>
+    <string name="title_activity_radio">Radio AND Television</string>
+    <string name="intro">Introduction</string>
+
+    <string name="development">Development of Radio and TV Kenya</string>
+    <string name="title_activity_extras">Extras</string>
+    <string name="title_activity_mis">Mis</string>
+    <string name="title_activity_view_ass">View Assignments</string>
+    <string name="title_activity_research">Research</string>
+    <string name="title_activity_data">Data Structure And Algorithms</string>
+    <string name="link"><a href="http://compsolutionz.eu5.org">Click here for more </a></string>
+</resources>

@@ -1,0 +1,502 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Ebrima;
+	panose-1:2 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:70.5pt 74.0pt 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:71.4pt 73.0pt 1.0in 1.0in;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection3
+	{page:WordSection3;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima'>1)
+Encapsulation</span></b></p>
+
+<p class=MsoNormal style='line-height:12.6pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:24.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Below
+is a real-life example of encapsulation. For the example program and more
+details on this concept refer </span><span style='font-size:12.0pt;line-height:
+98%;font-family:Ebrima'><a
+href="http://beginnersbook.com/2013/05/encapsulation-in-java/"><b><span
+style='color:#7DC246'>encapsuation in java with example</span></b></a></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>.</span></p>
+
+<p class=MsoNormal style='line-height:19.5pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Encapsulation
+is:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:Ebrima'>-----</span><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Binding the data with the code that manipulates it.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>-----It
+keeps the data and the code safe from external interference</span></p>
+
+<p class=MsoNormal style='line-height:14.45pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:4.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Looking
+at the example of a power steering mechanism of a car. Power steering of a car
+is a complex system, which internally have lots of components tightly coupled
+together, they work synchronously to turn the car in the desired direction. It
+even controls the power delivered by the engine to the steering wheel. But to
+the external world there is only one interface is available and rest of the
+complexity is hidden. Moreover, the steering unit in itself is complete and
+independent. It does not affect the functioning of any other mechanism.</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:10.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Similarly,
+same concept of encapsulation can be applied to code. Encapsulated code should
+have following characteristics:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:Ebrima'>-------</span><span style='font-size:12.0pt;font-family:
+Ebrima;color:#222426'>Everyone knows how to access it.</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;font-family:Ebrima;color:#222426'><br clear=all
+style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='text-align:justify'><a name=page2></a><span
+style='font-size:12.0pt;font-family:Ebrima;color:#222426'>-------Can be easily
+used regardless of implementation details.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>-------</span><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>There shouldn‘t any side effects of the code,
+to the rest of the application.</span></p>
+
+<p class=MsoNormal style='line-height:14.4pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:6.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>The
+idea of encapsulation is to keep classes separated and prevent them from having
+tightly coupled with each other.</span></p>
+
+<p class=MsoNormal style='line-height:20.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:13.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>A
+live example of encapsulation is the class of java.util.Hashtable. User only
+knows that he can store data in the form of key/value pair in a Hashtable and
+that he can retrieve that data in the various ways. But the actual
+implementation like, how and where this data is actually stored, is hidden from
+the user. User can simply use Hashtable wherever he wants to store Key/Value
+pairs without bothering about its implementation.</span></p>
+
+<p class=MsoNormal style='line-height:19.55pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:32.0pt;line-height:98%'><b><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Encapsulation
+</span></b><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>means the localization of the information or knowledge within an<b>
+</b>object.</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Encapsulation is also called as “Information Hiding”</span></b><span
+style='font-size:12.0pt;font-family:Ebrima;color:#222426'>.</span></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:23.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:98%'><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Objects
+encapsulate data and implementation details. To the outside world, an object is
+a black box that exhibits a certain behavior.</span></p>
+
+<p class=MsoNormal style='line-height:.4pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:11.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:98%'><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>The
+behavior of this object is what which is useful for the external world or other
+objects.</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt;line-height:99%'><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>An object exposes its behavior by means of methods or functions.</span></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:17.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:98%'><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>4)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>The
+set of functions an object exposes to other objects or external world acts as
+the interface of the object.</span></p>
+
+<p class=MsoNormal style='line-height:19.75pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Benefits of Encapsulation</span></b></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:6.0pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;text-indent:0in;line-height:104%'><span
+style='font-size:12.0pt;line-height:104%;font-family:Ebrima;color:#222426'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:104%;font-family:Ebrima;color:#222426'>The
+functionality where in we can change the implementation code without breaking
+the code of others who use our code is the biggest benefit of Encapsulation.</span></p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:0in;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Here
+in encapsulation we hide the implementation details behind a public programming
+interface. By interface, we mean the set of accessible methods our code makes
+available for other code to call—in other words, our code‘s API.</span></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:99%'><span style='font-size:12.0pt;line-height:99%;font-family:
+Ebrima;color:#222426'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>By
+hiding implementation details, We can rework on our method code at a later
+point of time, each time we change out implementation this should not affect
+the code which has a reference to our code, as our API still remains the same</span></p>
+
+<p class=MsoNormal style='line-height:19.6pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>How to bring in Encapsulation</span></b></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt;line-height:99%'><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>Make the instance variables protected.</span></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:28.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:99%'><span style='font-size:12.0pt;line-height:99%;font-family:
+Ebrima;color:#222426'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Create
+public accessor methods and use these methods from within the calling code.</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt;line-height:99%'><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'>3)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>Use the JavaBeans naming convention of <b>getter and setter</b>.</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#222426'>Eg: <b>getPropertyName</b>, <b>setPropertyName</b>.</span></p>
+
+<p class=MsoNormal style='line-height:19.45pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Example for encapsulation</span></b></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.45pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:darkblue'>class </span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#2B91AF'>EmployeeCount</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>{</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:darkblue'>private
+int </span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#2B91AF'>NoOfEmployees</span><span style='font-size:12.0pt;line-height:
+99%;font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:black'>=</span><span style='font-size:
+12.0pt;line-height:99%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:maroon'>0</span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:black'>;</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:darkblue'>public
+void </span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:black'>setNoOfEmployees (</span><span style='font-size:12.0pt;line-height:
+99%;font-family:Ebrima;color:darkblue'>int </span><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:black'>count)</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>{</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#2B91AF'>NoOfEmployees </span><span style='font-size:
+12.0pt;font-family:Ebrima;color:black'>= count;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:darkblue'>public double </span><span style='font-size:
+12.0pt;font-family:Ebrima;color:black'>getNoOfEmployees ()</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>{</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:99%;font-family:Ebrima'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin-left:39.0pt;line-height:99%'><a name=page9></a><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:darkblue'>return
+</span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#2B91AF'>NoOfEmployees</span><span style='font-size:12.0pt;line-height:
+99%;font-family:Ebrima;color:black'>;</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:darkblue'>class </span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#2B91AF'>Encapsulation</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>{</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:darkblue'>public
+static void </span><span style='font-size:12.0pt;line-height:99%;font-family:
+Ebrima;color:black'>main(</span><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#2B91AF'>String</span><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:black'>args[])</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>{</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:153.0pt;line-height:94%'><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:#2B91AF'>System</span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:black'>.</span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:darkblue'>out</span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:black'>.println(</span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:maroon'>&quot;Starting
+EmployeeCount...&quot;</span><span style='font-size:12.0pt;line-height:94%;
+font-family:Ebrima;color:black'>);</span></p>
+
+<p class=MsoNormal style='margin-right:153.0pt;line-height:94%'><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:#2B91AF'>EmployeeCount
+</span><span style='font-size:12.0pt;line-height:94%;font-family:Ebrima;
+color:black'>employeeCount =</span><span style='font-size:12.0pt;line-height:
+94%;font-family:Ebrima;color:#2B91AF'> </span><span style='font-size:12.0pt;
+line-height:94%;font-family:Ebrima;color:darkblue'>new</span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:#2B91AF'>
+EmployeeCount </span><span style='font-size:12.0pt;line-height:94%;font-family:
+Ebrima;color:black'>();</span></p>
+
+<p class=MsoNormal style='margin-right:153.0pt;line-height:94%'><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:black'>employeeCount.
+setNoOfEmployees (</span><span style='font-size:12.0pt;line-height:94%;
+font-family:Ebrima;color:maroon'>12003</span><span style='font-size:12.0pt;
+line-height:94%;font-family:Ebrima;color:black'>);</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#2B91AF'>System</span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:black'>.</span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:darkblue'>out</span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:black'>.println(</span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:maroon'>&quot;NoOfEmployees
+= &quot;</span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#2B91AF'> </span><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:black'>+ employeeCount. getNoOfEmployees ());</span></p>
+
+<p class=MsoNormal style='margin-left:22.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:95%'><span style='font-size:12.0pt;
+line-height:95%;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:98%'><b><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>Takeaway from above example:</span></b></p>
+
+<p class=MsoNormal style='line-height:.4pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:14.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>The
+application using an Object of this class EmployeeCount will not able to get
+the NoOfEmployees directly.</span></p>
+
+<p class=MsoNormal style='line-height:.35pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:27.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Setting
+and getting the value of the field NoOfEmployees is done with the help of
+Getter and setter method as shown below.</span></p>
+
+<p class=MsoNormal style='line-height:19.35pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:19.55pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

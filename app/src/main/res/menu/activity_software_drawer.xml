@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item android:title="Lecture one">
+            <menu>
+                <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/one1"
+
+            android:title="What is Software" />
+        <item
+            android:id="@+id/two1"
+
+            android:title="Software Engineering" />
+        <item
+            android:id="@+id/three1"
+
+            android:title="Software Evolution" />
+
+                    <item
+                        android:id="@+id/four1"
+
+                        android:title="Soft Paradiggns" />
+                    <item
+                        android:id="@+id/five1"
+
+                        android:title="Qlts of a good soft" />
+                </group>
+            </menu>
+        </item>
+    <item android:title="Lecture Two">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/one2"
+
+                    android:title="Soft Dev Process" />
+                <item
+                    android:id="@+id/two2"
+
+                    android:title="Specifications" />
+                <item
+                    android:id="@+id/three2"
+
+                    android:title="design ,implementation" />
+                <item
+                    android:id="@+id/four2"
+
+                    android:title="Prog..and Debuging" />
+                <item
+                    android:id="@+id/five2"
+
+                    android:title="Soft Evolution" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Lecture Three">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/one3"
+
+                    android:title="Soft Design" />
+                <item
+                    android:id="@+id/two3"
+
+                    android:title="Design process" />
+                <item
+                    android:id="@+id/three3"
+
+                    android:title="soft User Interfaces" />
+                <item
+                    android:id="@+id/four3"
+
+                    android:title="Gui implementation" />
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Lecture Four">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/one4"
+
+                    android:title="Soft Process Models" />
+                <item
+                    android:id="@+id/two4"
+
+                    android:title="Waterfall n Iterative" />
+                <item
+                    android:id="@+id/three4"
+
+                    android:title="v n incremental " />
+                <item
+                    android:id="@+id/four4"
+
+                    android:title="Rad n Agile " />
+                <item
+                    android:id="@+id/five4"
+
+                    android:title="prototyping n spiral" />
+                <item
+                    android:id="@+id/six4"
+
+                    android:title="Explorative Dev" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Lecture Five">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/one5"
+
+                    android:title="Case Tools" />
+                <item
+                    android:id="@+id/two5"
+
+                    android:title="Components (case)" />
+                <item
+                    android:id="@+id/three5"
+
+                    android:title="Case Risks n Control" />
+                <item
+                    android:id="@+id/four5"
+
+                    android:title="Case Tools cost" />
+
+            </group>
+        </menu>
+    </item>
+    <item android:title="Lecture Six">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/one6"
+
+                    android:title="Soft Estimation" />
+                <item
+                    android:id="@+id/two6"
+
+                    android:title="General Estim..." />
+                <item
+                    android:id="@+id/three6"
+
+                    android:title="Estimation Accuracy" />
+                <item
+                    android:id="@+id/four6"
+
+                    android:title="Estimation Issues" />
+                <item
+                    android:id="@+id/five6"
+
+                    android:title="Estimation Guidlines" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Lecture Seven">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/one7"
+
+                    android:title="Soft.. Project mngt" />
+                <item
+                    android:id="@+id/two7"
+
+                    android:title="Project planing" />
+                <item
+                    android:id="@+id/three7"
+
+                    android:title="Project cost" />
+                <item
+                    android:id="@+id/four7"
+
+                    android:title="Qualities of proj..mang.." />
+                <item
+                    android:id="@+id/five7"
+
+                    android:title="Project mngt tools" />
+                <item
+                    android:id="@+id/six7"
+
+                    android:title="Project Risk Managment" />
+            </group>
+        </menu>
+    </item>
+
+  <!--  <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>-->
+
+</menu>

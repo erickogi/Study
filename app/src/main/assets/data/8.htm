@@ -1,0 +1,1028 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:Verdana;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.kwd
+	{mso-style-name:kwd;}
+span.pln
+	{mso-style-name:pln;}
+span.pun
+	{mso-style-name:pun;}
+span.lit
+	{mso-style-name:lit;}
+span.str
+	{mso-style-name:str;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+		.erb-image-wrapper{
+			max-width:100%;
+            height:auto;
+            position: relative;
+            display:block;
+            margin:0 auto;
+        }
+        
+        .erb-image-wrapper img{
+        	max-width:100% !important;
+            height:auto;
+            display:block;
+         }
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>STACKS</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>A stack
+is an Abstract Data Type (ADT), commonly used in most programming languages. It
+is named stack as it behaves like a real-world stack, for example – a deck of
+cards or a pile of plates, etc.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>A
+real-world stack allows operations at one end only. For example, we can place
+or remove a card or plate from the top of the stack only. Likewise, Stack ADT
+allows all data operations at one end only. At any given time, we can only
+access the top element of a stack.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>This
+feature makes it LIFO data structure. LIFO stands for Last-in-first-out. Here,
+the element which is placed (inserted or added) last, is accessed first. In
+stack terminology, insertion operation is called&nbsp;<b>PUSH</b>&nbsp;operation
+and removal operation is called&nbsp;<b>POP</b>&nbsp;operation.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Stack Representation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>The
+following diagram depicts a stack and its operations &#8722;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>A stack
+can be implemented by means of Array, Structure, Pointer, and Linked List.
+Stack can either be a fixed size one or it may have a sense of dynamic
+resizing. Here, we are going to implement stack using arrays, which makes it a
+fixed size stack implementation.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Basic Operations</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Stack
+operations may involve initializing the stack, using it and then
+de-initializing it. Apart from these basic stuffs, a stack is used for the
+following two primary operations &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>push()</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Pushing (storing) an element on the stack.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>pop()</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Removing (accessing) an element from the stack.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>When data
+is PUSHed onto stack.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>To use a
+stack efficiently, we need to check the status of stack as well. For the same
+purpose, the following functionality is added to stacks &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>peek()</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; get the top data element of the stack, without
+removing it.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>isFull()</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; check if stack is full.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>isEmpty()</span></b><span style='font-size:10.5pt;font-family:
+"Verdana",sans-serif;color:black'>&nbsp;&#8722; check if stack is empty.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>At all
+times, we maintain a pointer to the last PUSHed data on the stack. As this
+pointer always represents the top of the stack, hence named&nbsp;<b>top</b>.
+The&nbsp;<b>top</b>pointer provides top value of the stack without actually
+removing it.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>First we
+should learn about procedures to support stack functions &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>peek()</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Algorithm
+of peek() function &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#F1F1F1'>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>begin procedure peek</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>   return stack[top]</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal;background:#F1F1F1;border:none;padding:0in'><span style='font-size:9.0pt;
+font-family:Consolas;color:#313131'>end procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Implementation
+of peek() function in C programming language &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Example</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>int</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> peek</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>()</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> stack</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>[</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>top</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>];</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>isfull()</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Algorithm
+of isfull() function &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>begin</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure isfull</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> top equals to MAXSIZE</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>true</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>else</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>false</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   endif</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Implementation
+of isfull() function in C programming language &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Example</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>bool</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> isfull</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>()</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>top </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>==</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> MAXSIZE</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>true</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>else</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>false</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>isempty()</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Algorithm
+of isempty() function &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>begin</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure isempty</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> top less than </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>1</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>true</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>else</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>false</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   endif</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Implementation
+of isempty() function in C programming language is slightly different. We
+initialize top at -1, as the index in array starts from 0. So we check if the
+top is below zero or -1 to determine if the stack is empty. Here's the code
+&#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Example</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>bool</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> isempty</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>()</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'>top </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>==</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>-</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#006666'>1</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>)</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>true</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>else</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>false</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Push Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>The
+process of putting a new data element onto stack is known as a Push Operation.
+Push operation involves a series of steps &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 1</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Checks if the stack is full.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 2</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; If the stack is full, produces an error and exit.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 3</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; If the stack is not full, increments&nbsp;<b>top</b>&nbsp;to
+point next empty space.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 4</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Adds data element to the stack location, where top
+is pointing.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 5</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Returns success.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>If the
+linked list is used to implement the stack, then in step 3, we need to allocate
+space dynamically.</span></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>Algorithm for PUSH Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>A simple
+algorithm for Push operation can be derived as follows &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>begin</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure push</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>:</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> stack</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>,</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> data</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> stack </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>is</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> full</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>null</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   endif</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   top </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>&#8592;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> top </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>+</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#006666'>1</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   stack</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>[</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>top</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>]</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>&#8592;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> data</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Implementation
+of this algorithm in C, is very easy. See the following code &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Example</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>void</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> push</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>int</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> data</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>)</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(!</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>isFull</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>())</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      top </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> top </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>+</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>1</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      stack</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>[</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>top</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>]</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> data</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>else</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      printf</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#008800'>&quot;Could not insert data, Stack is
+full.\n&quot;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in'><span style='font-size:20.5pt;font-family:"Verdana",sans-serif;
+color:#121214;letter-spacing:-.75pt'>Pop Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Accessing
+the content while removing it from the stack, is known as a Pop Operation. In
+an array implementation of pop() operation, the data element is not actually
+removed, instead&nbsp;<b>top</b>&nbsp;is decremented to a lower position in the
+stack to point to the next value. But in linked-list implementation, pop()
+actually removes data element and deallocates memory space.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>A Pop
+operation may involve the following steps &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 1</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Checks if the stack is empty.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 2</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; If the stack is empty, produces an error and exit.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 3</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; If the stack is not empty, accesses the data element
+at which&nbsp;<b>top</b>&nbsp;is pointing.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 4</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Decreases the value of top by 1.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:38.4pt;text-align:justify;text-indent:-.25in;line-height:18.0pt'><span
+style='font-size:10.0pt;font-family:Symbol;color:black'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>Step 5</span></b><span style='font-size:10.5pt;font-family:"Verdana",sans-serif;
+color:black'>&nbsp;&#8722; Returns success.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'></p>
+
+<p class=MsoNormal style='margin-top:2.4pt;margin-right:2.4pt;margin-bottom:
+2.4pt;margin-left:0in;line-height:18.0pt'><span style='font-size:15.5pt;
+font-family:"Verdana",sans-serif;color:black'>Algorithm for Pop Operation</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>A simple
+algorithm for Pop operation can be derived as follows &#8722;</span></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>begin</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure pop</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>:</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> stack</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> stack </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>is</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> empty</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>null</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   endif</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   data </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>&#8592;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> stack</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>[</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>top</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>]</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   top </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>&#8592;</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> top </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>-</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#006666'>1</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> data</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>end</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> procedure</span></p>
+
+</div>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Implementation
+of this algorithm in C, is as follows &#8722;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.4pt;margin-bottom:12.0pt;
+margin-left:2.4pt;text-align:justify;line-height:18.0pt'><b><span
+style='font-size:12.0pt;font-family:"Verdana",sans-serif;color:black'>Example</span></b></p>
+
+<div style='border:solid #D6D6D6 1.0pt;padding:4.0pt 4.0pt 4.0pt 4.0pt;
+background:#EEEEEE'>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>int</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> pop</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>int</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> data</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>)</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>if</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>(!</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>isempty</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>())</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      data </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> stack</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>[</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>top</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>];</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      top </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> top </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>-</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#006666'>1</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#313131'>   </span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#000088'>return</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'> data</span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>;</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#000088'>else</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#313131'> </span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>{</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>      printf</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#666600'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#008800'>&quot;Could not retrieve data, Stack is
+empty.\n&quot;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#666600'>);</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#313131'>   </span><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+<p class=MsoNormal style='margin-bottom:7.5pt;line-height:12.0pt;background:
+#EEEEEE;border:none;padding:0in'><span style='font-size:10.0pt;font-family:
+Consolas;color:#666600'>}</span></p>
+
+</div>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

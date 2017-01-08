@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/into"
+
+            android:title="@string/intro" />
+        <item
+            android:id="@+id/development"
+
+            android:title="@string/development" />
+        <item
+            android:id="@+id/gathering"
+
+            android:title="News Gathering" />
+        <item
+            android:id="@+id/sources"
+
+            android:title="Sources of News" />
+        <item
+            android:id="@+id/confidential"
+
+            android:title="Confidential Sources" />
+        <item
+            android:id="@+id/news"
+
+            android:title="News Gathering" />
+        <item
+            android:id="@+id/writing"
+
+            android:title="Writing For Broadcast Media" />
+        <item
+            android:id="@+id/propasal"
+
+            android:title="Propals,script writing,production" />
+        <item
+            android:id="@+id/presentation"
+
+            android:title="Radio n Tv News Presentation" />
+        <item
+            android:id="@+id/technologies"
+
+            android:title="Tech in Radio /Tv" />
+        <item
+            android:id="@+id/laws"
+
+            android:title="Laws in Mass Media" />
+        <item
+            android:id="@+id/ethics"
+
+            android:title="Media Ethics" />
+        <item
+            android:id="@+id/code"
+
+            android:title="CODE of Conducts" />
+
+    </group>
+
+
+
+</menu>

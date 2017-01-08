@@ -1,0 +1,1072 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Ebrima;
+	panose-1:2 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Trebuchet MS";
+	panose-1:2 11 6 3 2 2 2 2 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:71.1pt 74.0pt 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:8.5in 11.0in;
+	margin:71.1pt 76.0pt 1.0in 1.0in;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:8.5in 11.0in;
+	margin:71.4pt 73.0pt 1.0in 1.0in;}
+div.WordSection3
+	{page:WordSection3;}
+@page WordSection4
+	{size:8.5in 11.0in;
+	margin:71.1pt 75.0pt 1.0in 1.0in;}
+div.WordSection4
+	{page:WordSection4;}
+@page WordSection5
+	{size:8.5in 11.0in;
+	margin:71.1pt 76.0pt 1.0in 1.0in;}
+div.WordSection5
+	{page:WordSection5;}
+@page WordSection6
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection6
+	{page:WordSection6;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima'>)
+Polymorphism</span></b></p>
+
+</div>
+
+<b><span style='font-size:12.0pt;font-family:Ebrima'><br clear=all
+style='page-break-before:auto'>
+</span></b>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='line-height:12.6pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:98%'><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>Below is a real-life example
+of polymorphism. For the example program and more details on this OOP concept
+refer </span><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima'><a
+href="http://beginnersbook.com/2013/03/polymorphism-in-java/"><b><span
+style='color:#7DC246'>polymorphism in java</span></b><span style='color:#222426'>
+</span></a></span><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>and </span><span style='font-size:12.0pt;line-height:
+98%;font-family:Ebrima'><a
+href="http://beginnersbook.com/2013/04/runtime-compile-time-polymorphism/"><b><span
+style='color:#7DC246'>runtime &amp; compile time</span></b></a></span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'> </span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima'><a
+href="http://beginnersbook.com/2013/04/runtime-compile-time-polymorphism/"><b><span
+style='color:#7DC246'>polymorphism</span></b></a></span><span style='font-size:
+12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>.</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='text-align:justify'><a name=page3></a><span
+style='font-size:12.0pt;font-family:Ebrima;color:#222426'>------Polymorphism
+means to process objects differently based on their data type.</span></p>
+
+<p class=MsoNormal style='margin-right:30.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>------</span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>In
+other words it means, one method with multiple implementation, for a certain
+class of action. And which implementation to be used is decided at runtime
+depending upon the situation (i.e., data type of the object)</span></p>
+
+<p class=MsoNormal style='margin-right:5.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>------</span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>This
+can be implemented by designing a generic interface, which provides generic
+methods for a certain class of action and there can be multiple classes, which
+provides the implementation of these generic methods.</span></p>
+
+<p class=MsoNormal style='line-height:14.35pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:11.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Lets
+us look at same example of a car. A car have a gear transmission system. It has
+four front gears and one backward gear. When the engine is accelerated then
+depending upon which gear is engaged different amount power and movement is
+delivered to the car.</span></p>
+
+<p class=MsoNormal style='line-height:20.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:10.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Polymorphism
+could be static and dynamic both. Overloading is static polymorphism while,
+overriding is dynamic polymorphism.</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>--------</span><b><span style='font-size:
+12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>Overloading </span></b><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>in
+simple words means two methods having same method name but<b> </b>takes
+different input parameters. This called static because, which method to be
+invoked will be decided at the time of compilation</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:98%'><b><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>--------Overriding
+</span></b><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>means a derived class is implementing a method of its super
+class.</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:19.85pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Types of Polymorphism</span></b></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt;line-height:99%'><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#222426'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#222426'>Static Polymorphism</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt;line-height:98%'><span style='font-size:12.0pt;line-height:98%;
+font-family:Ebrima;color:#222426'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>Dynamic Polymorphism</span></p>
+
+<p class=MsoNormal style='line-height:19.7pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Static Polymorphism:</span></b></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:12.0pt;line-height:98%'><b><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Function
+Overloading </span></b><span style='font-size:12.0pt;line-height:98%;
+font-family:Ebrima;color:#222426'>–<b> </b>within same class more than one
+method having same name<b> </b>but differing in signature.</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Resolved
+during compilation time.</span></p>
+
+<p class=MsoNormal style='line-height:98%'><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>Return type is not part of
+method signature.</span></p>
+
+<p class=MsoNormal style='line-height:19.7pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Dynamic Polymorphism</span></b></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:23.0pt;line-height:98%'><b><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Function
+Overriding </span></b><span style='font-size:12.0pt;line-height:98%;font-family:
+Ebrima;color:#222426'>–<b> </b>keeping the signature and return type same,
+method in the<b> </b>base class is redefined in the derived class.</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Resolved
+during run time.</span></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:1.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Which
+method to be invoked is decided by the object that the reference points to and
+not by the type of the reference.</span></p>
+
+<p class=MsoNormal style='line-height:19.65pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Overriding:</span></b></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#222426'>Redefining a super class
+method in a sub class is called method overriding.</span></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:98%'><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>The method signature ie.
+method name, parameter list and return type have to match exactly.</span></p>
+
+<p class=MsoNormal style='line-height:.45pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:1.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>The
+overridden method can widen the accessibility but not narrow it, ie if it is
+private in the base class, the child class can make it public but not vice
+versa.</span></p>
+
+<p class=MsoNormal style='line-height:19.6pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:12.0pt;font-family:Ebrima;
+color:#222426'>Overriding Examples:</span></b></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#222426'>Consider a Super Class Doctor
+and Subclass Surgeon. Class <span style='background:#EEEEEE'>Doctor</span>has a</span></p>
+
+<p class=MsoNormal style='line-height:.4pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:7.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>method
+<span style='background:#EEEEEE'>treatPatient()</span>. Surgeon overrides
+treatPatient method ie gives a new definition to the method.</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.4pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#2B91AF'>Doctor </span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:black'>doctorObj
+=</span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#2B91AF'> </span><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:darkblue'>new</span><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#2B91AF'> Doctor</span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:black'>();</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:208.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:91%'><span style='font-size:12.0pt;line-height:91%;font-family:
+Ebrima;color:gray'>//<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:gray'>Call the
+treatPatient method of Doctor class </span><span style='font-size:12.0pt;
+line-height:91%;font-family:Ebrima;color:black'>doctorObj.treatPatient()</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:gray'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#2B91AF'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#2B91AF'>Surgeon
+</span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:black'>surgeonObj =</span><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#2B91AF'> </span><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:darkblue'>new</span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#2B91AF'>
+Surgeon</span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:black'>();</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:gray'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:203.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:91%'><span style='font-size:12.0pt;line-height:91%;font-family:
+Ebrima;color:gray'>//<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:gray'>Call the
+treatPatient method of Surgeon class </span><span style='font-size:12.0pt;
+line-height:91%;font-family:Ebrima;color:black'>surgeonObj.treatPatient()</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:gray'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#2B91AF'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#2B91AF'>Doctor
+</span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:black'>obj =</span><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:#2B91AF'> </span><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:darkblue'>new</span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#2B91AF'>
+Surgeon</span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:black'>();</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:1.75pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:gray'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:38.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-align:justify;text-indent:0in;
+line-height:92%'><span style='font-size:12.0pt;line-height:92%;font-family:
+Ebrima;color:gray'>//<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:gray'>calls
+Surgeon’s treatPatient method as the reference is pointing to Surgeon </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>obj.treatPatient();</span></p>
+
+<p class=MsoNormal style='margin-right:38.0pt;text-align:justify;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:38.0pt;text-align:justify;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:38.0pt;text-align:justify;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:38.0pt;text-align:justify;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:38.0pt;text-align:justify;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:38.0pt;text-align:justify;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:38.0pt;text-align:justify;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:38.0pt;text-align:justify;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:gray'>&nbsp;</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:gray'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection4>
+
+<p class=MsoNormal><a name=page13></a><b><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>Method/Function Overloading:</span></b></p>
+
+<p class=MsoNormal style='line-height:.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#222426'>Method Overloading refers to
+the practice of using the same name to denote several different operations.
+Overloading can be done for both functions as well as operators. Here we look
+at only Method overloading.</span></p>
+
+<p class=MsoNormal style='line-height:99%'><b><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#222426'>Declaration:</span></b></p>
+
+<p class=MsoNormal style='line-height:99%'><b><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#222426'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:99%'><b><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:#222426'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:300.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:darkblue'>void
+</span><span style='font-size:12.0pt;line-height:100%;font-family:Ebrima;
+color:#2B91AF'>SomeMethod</span><span style='font-size:12.0pt;line-height:100%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:100%;font-family:Ebrima;color:black'>(</span><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:darkblue'>int
+</span><span style='font-size:12.0pt;line-height:100%;font-family:Ebrima;
+color:black'>value);</span><span style='font-size:12.0pt;line-height:100%;
+font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-right:300.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:darkblue'>void
+</span><span style='font-size:12.0pt;line-height:100%;font-family:Ebrima;
+color:#2B91AF'>SomeMethod</span><span style='font-size:12.0pt;line-height:100%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:100%;font-family:Ebrima;color:black'>(</span><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:darkblue'>float
+</span><span style='font-size:12.0pt;line-height:100%;font-family:Ebrima;
+color:black'>value);</span><span style='font-size:12.0pt;line-height:100%;
+font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-right:300.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:darkblue'>void
+</span><span style='font-size:12.0pt;line-height:100%;font-family:Ebrima;
+color:#2B91AF'>SomeMethod</span><span style='font-size:12.0pt;line-height:100%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:100%;font-family:Ebrima;color:black'>(</span><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:darkblue'>char
+</span><span style='font-size:12.0pt;line-height:100%;font-family:Ebrima;
+color:black'>value);</span><span style='font-size:12.0pt;line-height:100%;
+font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-right:300.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:darkblue'>void
+</span><span style='font-size:12.0pt;line-height:100%;font-family:Ebrima;
+color:#2B91AF'>SomeMethod</span><span style='font-size:12.0pt;line-height:100%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:100%;font-family:Ebrima;color:black'>(</span><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:#2B91AF'>String</span><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:black'>*
+str);</span><span style='font-size:12.0pt;line-height:100%;font-family:Ebrima;
+color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-right:300.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:darkblue'>void
+</span><span style='font-size:12.0pt;line-height:100%;font-family:Ebrima;
+color:#2B91AF'>SomeMethod</span><span style='font-size:12.0pt;line-height:100%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:100%;font-family:Ebrima;color:black'>(</span><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:darkblue'>char</span><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:black'>*
+str);</span></p>
+
+<p class=MsoNormal style='margin-right:300.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:300.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:300.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:300.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:300.0pt;line-height:100%'><span
+style='font-size:12.0pt;line-height:100%;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:3.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>All
+the five methods are called </span><span style='font-size:12.0pt;line-height:
+98%;font-family:"Times New Roman",serif;color:#222426'>&#8215;</span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>SomeMethod
+</span><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>‘</span><span style='font-size:12.0pt;line-height:98%;
+font-family:Ebrima;color:#222426'>. All the methods have the same name, but
+different signatures.</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:8.0pt;line-height:98%'><b><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>The
+concept of the same function name with different types of parameters being
+passed is called Function Overloading.</span></b></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt'><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:Ebrima;color:#222426'>In Overloading we can
+reuse the same method name by changing the arguments.</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt;line-height:98%'><span style='font-size:12.0pt;line-height:98%;
+font-family:Ebrima;color:#222426'>2)<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>Overloaded methods- Must and Must Not Facts:</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>------The Overloaded method must have
+different argument lists,</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:33.0pt;text-align:justify;line-height:
+98%'><span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;
+color:#222426'>------Can have different return types but in that case it is
+mandatory to have different argument list.</span></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>------</span><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>Can have different access modifiers and</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:#222426'>------Can
+throw different exceptions</span></p>
+
+<p class=MsoNormal style='line-height:13.85pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:14.0pt;text-align:justify;text-indent:
+-14.0pt'><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:12.0pt;font-family:Ebrima;color:#222426'>Methods can be
+overloaded in the same as well as the sub classes.</span></p>
+
+<p class=MsoNormal style='line-height:19.95pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:110.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Q:
+What determines which overridden method is used at runtime? A: Object type</span></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:52.0pt;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>Q:
+What determines which overloaded method will be used at compile time? A:
+Reference type determines.</span></p>
+
+<p class=MsoNormal style='line-height:.45pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:98%'><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>Operator overloading refers
+to the operators like </span><span style='font-size:12.0pt;line-height:98%;
+font-family:"Times New Roman",serif;color:#222426'>&#8215;</span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>+</span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>‘</span><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>
+being used for different purposes based on the data type on either side of the
+operator.</span></p>
+
+<p class=MsoNormal style='line-height:19.25pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><i><span style='font-size:12.0pt;font-family:Ebrima'>Combined
+example for Inheritance &amp; Polymorphism</span></i></b></p>
+
+<p class=MsoNormal style='line-height:17.6pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:289.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>abstract public class </span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:#2B91AF'>Employee</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>{</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:289.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>private </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:#2B91AF'>String</span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>name;</span></p>
+
+<p class=MsoNormal style='line-height:1.85pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:278.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>public </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:#2B91AF'>Employee</span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:black'>(</span><span style='font-size:
+12.0pt;line-height:92%;font-family:Ebrima;color:#2B91AF'>String</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>ename)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:278.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'> {</span></p>
+
+<p class=MsoNormal style='margin-right:278.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>name =
+ename;</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:311.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>public </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:#2B91AF'>String</span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>getName()</span></p>
+
+<p class=MsoNormal style='margin-right:311.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>{</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:311.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>return new </span><span style='font-size:12.0pt;line-height:
+92%;font-family:Ebrima;color:black'>name;</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.85pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:256.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:darkblue'>private void </span><span style='font-size:12.0pt;line-height:
+91%;font-family:Ebrima;color:black'>setName(</span><span style='font-size:12.0pt;
+line-height:91%;font-family:Ebrima;color:#2B91AF'>String</span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:black'>name) </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:256.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>{</span><span style='font-size:12.0pt;line-height:91%;font-family:
+Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:256.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:darkblue'>this</span><span style='font-size:12.0pt;line-height:91%;
+font-family:Ebrima;color:black'>.name =</span><span style='font-size:12.0pt;
+line-height:91%;font-family:Ebrima;color:darkblue'> new </span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:#2B91AF'>String</span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:black'>(name);</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:99%;font-family:Ebrima'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection5>
+
+<p class=MsoNormal style='line-height:1.7pt'><a name=page14></a><span
+style='font-size:12.0pt;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:290.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;line-height:97%'><span
+style='font-size:12.0pt;line-height:97%;font-family:Ebrima;color:darkblue'>abstract
+public double </span><span style='font-size:12.0pt;line-height:97%;font-family:
+Ebrima;color:black'>pay();</span></p>
+
+<p class=MsoNormal style='margin-right:290.0pt;line-height:97%'><span
+style='font-size:12.0pt;line-height:97%;font-family:Ebrima;color:darkblue'>public
+</span><span style='font-size:12.0pt;line-height:97%;font-family:Ebrima;
+color:#2B91AF'>String</span><span style='font-size:12.0pt;line-height:97%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:97%;font-family:Ebrima;color:black'>toString() {</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:290.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;line-height:97%'><span
+style='font-size:12.0pt;line-height:97%;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:darkblue'>return
+</span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:maroon'>&quot;name is&quot;</span><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:black'>+ name;</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:99%'><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:246.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:darkblue'>public class </span><span style='font-size:12.0pt;line-height:
+91%;font-family:Ebrima;color:#2B91AF'>Salaried</span><span style='font-size:
+12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'> extends </span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:#2B91AF'>Employee</span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:91%;font-family:Ebrima;color:black'>{</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:246.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:246.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:darkblue'>double </span><span style='font-size:12.0pt;line-height:91%;
+font-family:Ebrima;color:black'>salary;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:229.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>public </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:#2B91AF'>Salaried</span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:black'>(</span><span style='font-size:
+12.0pt;line-height:92%;font-family:Ebrima;color:#2B91AF'>String</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>name,</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'>
+double </span><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>s)</span></p>
+
+<p class=MsoNormal style='margin-right:229.0pt;line-height:92%'><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'> {</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:229.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>super</span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:black'>(name);</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:33.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>salary =s;</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.8pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:240.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>public void </span><span style='font-size:12.0pt;line-height:
+92%;font-family:Ebrima;color:black'>setSalary(</span><span style='font-size:
+12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'>double </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>salary)
+</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:240.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>{</span><span style='font-size:12.0pt;line-height:92%;font-family:
+Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:240.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>this</span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:black'>.salary = salary;</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:301.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>public double </span><span style='font-size:12.0pt;line-height:
+92%;font-family:Ebrima;color:black'>getSalary() </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:301.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:black'>{</span><span style='font-size:12.0pt;line-height:92%;font-family:
+Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:301.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>return </span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:black'>salary;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.85pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:334.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:darkblue'>public double </span><span style='font-size:12.0pt;line-height:
+91%;font-family:Ebrima;color:black'>pay() </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:334.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:black'>{</span><span style='font-size:12.0pt;line-height:91%;font-family:
+Ebrima;color:darkblue'> </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:334.0pt;margin-bottom:
+0in;margin-left:33.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+91%'><span style='font-size:12.0pt;line-height:91%;font-family:Ebrima;
+color:darkblue'>return </span><span style='font-size:12.0pt;line-height:91%;
+font-family:Ebrima;color:black'>salary;</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt;line-height:99%'><span
+style='font-size:12.0pt;line-height:99%;font-family:Ebrima;color:darkblue'>public
+</span><span style='font-size:12.0pt;line-height:99%;font-family:Ebrima;
+color:#2B91AF'>String</span><span style='font-size:12.0pt;line-height:99%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:99%;font-family:Ebrima;color:black'>toString(){</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:33.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima;color:darkblue'>return super</span><span style='font-size:
+12.0pt;font-family:Ebrima;color:black'>.toString() +</span><span
+style='font-size:12.0pt;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;font-family:Ebrima;color:maroon'>&quot; (salary is
+&quot;</span><span style='font-size:12.0pt;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;font-family:Ebrima;color:black'>+salary+</span><span
+style='font-size:12.0pt;font-family:Ebrima;color:maroon'>&quot;)&quot;</span><span
+style='font-size:12.0pt;font-family:Ebrima;color:black'>;</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:92%'><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='line-height:97%'><b><i><span style='font-size:12.0pt;
+line-height:97%;font-family:Ebrima'>IS-A &amp; HAS-A Relationships</span></i></b></p>
+
+<p class=MsoNormal style='line-height:15.8pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:darkblue'>public
+class </span><span style='font-size:12.0pt;font-family:Ebrima;color:#2B91AF'>SuperClass</span><span
+style='font-size:12.0pt;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;font-family:Ebrima;color:black'>{}</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:1.75pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:26.0pt;line-height:94%'><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:darkblue'>public
+class </span><span style='font-size:12.0pt;line-height:94%;font-family:Ebrima;
+color:#2B91AF'>SubClass1</span><span style='font-size:12.0pt;line-height:94%;
+font-family:Ebrima;color:darkblue'> extends </span><span style='font-size:12.0pt;
+line-height:94%;font-family:Ebrima;color:#2B91AF'>SuperClass</span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:black'>{</span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:gray'>//SubClass
+1 code goes here }</span></p>
+
+<p class=MsoNormal style='margin-right:26.0pt;line-height:94%'><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:gray'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:26.0pt;line-height:94%'><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:darkblue'>public
+class </span><span style='font-size:12.0pt;line-height:94%;font-family:Ebrima;
+color:#2B91AF'>SubClass2</span><span style='font-size:12.0pt;line-height:94%;
+font-family:Ebrima;color:darkblue'> extends </span><span style='font-size:12.0pt;
+line-height:94%;font-family:Ebrima;color:#2B91AF'>SubClass1</span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:black'>{</span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:darkblue'> </span><span
+style='font-size:12.0pt;line-height:94%;font-family:Ebrima;color:gray'>//SubClass2
+Specific code goes here }</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:98%'><b><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>HAS-A </span></b><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>relationships
+are based on usage, rather than inheritance. In other words, class<b> </b>A <b>HAS-A</b>
+B if code in class A has a reference to an instance of class B.</span></p>
+
+<p class=MsoNormal style='line-height:19.6pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:#222426'>For
+example, we can say the following,</span></p>
+
+<p class=MsoNormal style='line-height:98%'><span style='font-size:12.0pt;
+line-height:98%;font-family:Ebrima;color:#222426'>A Car <b>IS-A</b> Vehicle. A
+Car <b>HAS-A</b> License. and the code looks like this:</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.45pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;font-family:Ebrima;color:darkblue'>public
+class </span><span style='font-size:12.0pt;font-family:Ebrima;color:#2B91AF'>Vehicle</span><span
+style='font-size:12.0pt;font-family:Ebrima;color:black'>{ }</span></p>
+
+<p class=MsoNormal style='line-height:1.75pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:284.0pt;margin-bottom:
+0in;margin-left:17.0pt;margin-bottom:.0001pt;text-indent:-16.5pt;line-height:
+92%'><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:darkblue'>public class </span><span style='font-size:12.0pt;line-height:
+92%;font-family:Ebrima;color:#2B91AF'>Car</span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:darkblue'> extends </span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:#2B91AF'>Vehicle</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:black'>{</span><span
+style='font-size:12.0pt;line-height:92%;font-family:Ebrima;color:darkblue'>
+private </span><span style='font-size:12.0pt;line-height:92%;font-family:Ebrima;
+color:#2B91AF'>License</span><span style='font-size:12.0pt;line-height:92%;
+font-family:Ebrima;color:darkblue'> </span><span style='font-size:12.0pt;
+line-height:92%;font-family:Ebrima;color:black'>myCarLicense;</span></p>
+
+<p class=MsoNormal style='line-height:94%'><span style='font-size:12.0pt;
+line-height:94%;font-family:Ebrima'>}</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify;line-height:98%'><span
+style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'>&nbsp;</span></p>
+
+</div>
+
+<span style='font-size:12.0pt;line-height:98%;font-family:Ebrima;color:#222426'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection6>
+
+<p class=MsoNormal style='line-height:10.0pt'><a name=page4></a><span
+style='font-size:12.0pt;font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt;
+font-family:Ebrima'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
